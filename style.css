@@ -1,0 +1,9 @@
+body{}
+container{
+  width:960px;
+  border: 1px solid #ccc;
+}
+header{
+  font: 20px sans-serif;
+  width: 90%;
+}
