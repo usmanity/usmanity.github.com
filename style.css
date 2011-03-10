@@ -1,11 +1,9 @@
 body{}
-container{
-  width:960px;
+#container{
+  width: 960px;
   border: 1px solid #ccc;
 }
-header{
+h1{
   font: 20px sans-serif;
-  width: 90%;
-  height: 100%;
+  color: #858585;
 }
-
