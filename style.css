@@ -1,7 +1,9 @@
-body{}
+body{
+  margin:auto;
+}
 #container{
   width: 960px;
-  border: 1px solid #ccc;
+  border: 1px solid #f8f9fc;
 }
 h1{
   font: 20px sans-serif;
