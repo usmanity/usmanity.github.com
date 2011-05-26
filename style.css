@@ -28,7 +28,9 @@ abbr[title], dfn[title] { border-bottom: 1px dotted; cursor: help; }
 table { border-collapse: collapse; border-spacing: 0; }
 hr { display: block; height: 1px; border: 0; border-top: 1px solid #ccc; margin: 1em 0; padding: 0; }
 input, select { vertical-align: middle; }
-body { font:13px/1.231 sans-serif; *font-size:small; } 
+body { 
+    font:13px/1.231 'Droid Sans', sans-serif; *font-size:small; 
+} 
 select, input, textarea, button { font:99% sans-serif; }
 html { overflow-y: scroll; }
 a:hover, a:active { outline: none; }
@@ -48,8 +50,8 @@ button, input, select, textarea { margin: 0; }
 input:valid, textarea:valid   {  }
 input:invalid, textarea:invalid { border-radius: 1px; -moz-box-shadow: 0px 0px 5px red; -webkit-box-shadow: 0px 0px 5px red; box-shadow: 0px 0px 5px red; }
 .no-boxshadow input:invalid, .no-boxshadow textarea:invalid { background-color: #f0dddd; }
-::-moz-selection{ background: #FF5E99; color:#fff; text-shadow: none; }
-::selection { background:#FF5E99; color:#fff; text-shadow: none; }
+::-moz-selection{ background: #FFD281; color:#fff; text-shadow: none; }
+::selection { background:#FFD281; color:#fff; text-shadow: none; }
 a:link { -webkit-tap-highlight-color: #FF5E99; }
 button {  width: auto; overflow: visible; }
 .ie7 img { -ms-interpolation-mode: bicubic; }
@@ -57,17 +59,6 @@ body, select, input, textarea {  color: #444; }
 h1, h2, h3, h4, h5, h6 { font-weight: bold; }
 a, a:active, a:visited { color: #607890; }
 a:hover { color: #036; }
-
-/*
-    // ========================================== \\
-   ||                                              ||
-   ||               Your styles !                  ||
-   ||                                              ||
-    \\ ========================================== //
-*/
-
-
-
 
 
 .ir { display: block; text-indent: -999em; overflow: hidden; background-repeat: no-repeat; text-align: left; direction: ltr; }
@@ -100,3 +91,50 @@ a:hover { color: #036; }
   p, h2, h3 { orphans: 3; widows: 3; }
   h2, h3{ page-break-after: avoid; }
 }
+
+/* - - -{ styling }- - - */
+a:link{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}
+nav{
+    height: 30px;
+    border-bottom: 1px solid #e3e3e3;
+    background-color: #f9f9f9;
+    padding-top: 1em;
+    margin-bottom: 1em;
+}
+ul{
+    float:right;
+    margin-left: 0.9em;
+}
+#head_title{
+    width: 100px;
+    height: 35px;
+    background-color: #f7f7f7;
+    margin-top: -15px;
+    padding: 10px 0 0 10px;
+    border-right: 1px solid #e6e6e6;
+}
+#head_title:hover{
+    border-right: 2px solid #e5e5e5;
+}
+li{
+    float: left;
+    margin: 10px;
+}
+ul a{
+    margin: 10px;
+}
+h2{
+    font: 18px/1em Arimo, 'LeagueGothic', sans-serif;
+    float:left;
+    margin: 0.3em 2em 0 0;
+}
+#main_content{
+    margin: 5%;
+    font-family: 'Droid Sans', 'lucida grande', sans-serif;
+}
+
