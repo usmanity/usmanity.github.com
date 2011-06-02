@@ -32,7 +32,6 @@ body {
     font:13px/1.231 'Droid Sans', sans-serif; *font-size:small; 
 } 
 select, input, textarea, button { font:99% sans-serif; }
-html { overflow-y: scroll; }
 a:hover, a:active { outline: none; }
 ul, ol { margin-left: 2em; }
 ol { list-style-type: decimal; }
