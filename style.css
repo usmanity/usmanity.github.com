@@ -93,7 +93,7 @@ a:hover { color: #036; }
 
 /* - - -{ styling }- - - */
 body{
-    background-image: url("backgrddound.jpg");
+    background-image: url("background.jpg");
     background-position: center;
     background-repeat: no-repeat;
 }
