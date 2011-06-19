@@ -168,5 +168,6 @@ div[bottom]{
     overflow: hidden;
 }
 div[welcome]{
+    text-shadow: 0 1px 0 #fff;
     font: 25px/1.3em 'Copse', 'Archer', 'archer medium',serif;
 }
