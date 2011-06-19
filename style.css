@@ -96,6 +96,7 @@ body{
     background-image: url("background.jpg");
     background-position: center;
     background-repeat: no-repeat;
+    background-size: 1300px;
 }
 a:link{
     text-decoration: none;
