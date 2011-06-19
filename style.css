@@ -92,6 +92,11 @@ a:hover { color: #036; }
 }
 
 /* - - -{ styling }- - - */
+body{
+    background-image: url("backgrddound.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+}
 a:link{
     text-decoration: none;
 }
@@ -137,3 +142,30 @@ h2{
     font-family: 'Droid Sans', 'lucida grande', sans-serif;
 }
 
+div[top],div[bottom]{
+    font: 56px/1.3em sans-serif;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    text-align: center;
+}
+div[top]{
+    background-color: azure;
+    color: black;
+    height: 88px;
+    top: 15px;
+    position: relative;
+    background-size: cover;
+}
+div[bottom]{
+    position: relative;
+    top: -72px;
+    background-color: black;
+    color: azure;
+    height: 43px;
+    z-index: 2;
+    text-shadow: 0 1px 1px rgba(255, 255, 255, 0.9);
+    overflow: hidden;
+}
+div[welcome]{
+    font: 25px/1.3em 'Copse', 'Archer', 'archer medium',serif;
+}
