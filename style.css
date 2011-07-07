@@ -96,6 +96,7 @@ body{
     background-position: center;
     background-repeat: no-repeat;
     background-size: 1300px;
+    background-image: src('samson.jpg');
 }
 a:link{
     text-decoration: none;
