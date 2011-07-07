@@ -96,7 +96,7 @@ body{
     background-position: center;
     background-repeat: no-repeat;
     background-size: 1300px;
-    background-image: src('samson.jpg');
+    background-image: url('samson.jpg');
 }
 a:link{
     text-decoration: none;
@@ -141,6 +141,13 @@ h2{
 #main_content{
     margin: 5%;
     font-family: 'Droid Sans', 'lucida grande', sans-serif;
+    background-color: rgba(248, 248, 248, 0.7);
+    padding: 30px;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-webkit-border: 4px;
+    -ms-webkit-border: 4px;
+    border: 1px solid white;
 }
 
 div[top],div[bottom]{
