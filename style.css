@@ -123,20 +123,36 @@ ul{
     padding: 10px 0 0 10px;
     border-right: 1px solid #e6e6e6;
 }
-#head_title:hover{
-    border-right: 2px solid #e5e5e5;
-}
 li{
     float: left;
     margin: 10px;
 }
 ul a{
     margin: 10px;
+	padding: 5px;
 }
-h2{
+ul a:hover{
+	font-family: 'Droid Sans', 'lucida grande', sans-serif;
+	background-color: rgba(248, 248, 248, 0.7);
+	border-radius: 4px;
+	-webkit-border-radius: 4px;
+	-moz-webkit-border: 4px;
+	-ms-webkit-border: 4px;
+	padding: 5px;
+	text-decoration: none;
+	color: #0F8983 !important;
+	-webkit-transition: background-color 0.3s linear;  
+	-moz-transition: background-color 0.3s linear;  
+	-o-transition: background-color 0.3s linear;  
+	transition: background-color 0.3s linear;
+}
+nav h1 a{
     font: 18px/1em Arimo, 'LeagueGothic', sans-serif;
     float:left;
-    margin: 0.3em 2em 0 0;
+    margin: 7px;
+	font-weight: normal;
+	font-size: 14px;
+	color: white;
 }
 #main_content{
     margin: 5%;
@@ -147,7 +163,7 @@ h2{
     -webkit-border-radius: 4px;
     -moz-webkit-border: 4px;
     -ms-webkit-border: 4px;
-    border: 1px solid white;
+    border: 1px solid rgba(255,255,255,0.5);
 }
 
 div[top],div[bottom]{
@@ -174,11 +190,18 @@ div[bottom]{
     text-shadow: 0 1px 1px rgba(255, 255, 255, 0.9);
     overflow: hidden;
 }
-div[welcome]{
+div[hello]{
     text-shadow: 0 1px 0 #fff;
     font: 65px/1.3em 'Copse', 'Archer', 'archer medium',serif;
 }
+div[about]{
+	font-size: 20px;
+	margin: 10px;
+}
 nav ul{
 	float: right;
-	margin-top: 10px;
+	margin-top: 15px;
+}
+nav ul a,nav ul a:visited,nav ul a:link{
+	color: white;
 }
