@@ -105,11 +105,11 @@ a:hover{
     text-decoration: underline;
 }
 nav{
-    height: 30px;
     border-bottom: 1px solid rgba(240, 240, 240, 0.9);
 	background-color: rgba(8, 73, 70, 0.6)
     padding-top: 1em;
     margin-bottom: 1em;
+	margin-top: 10px;
 }
 ul{
     float:right;
