@@ -239,3 +239,7 @@ div[fork_me] a:link, div[fork_me] a:hover{
 	padding: 0;
 	background-color: transparent;
 }
+footer{
+  position: absolute;
+  bottom: 5px;
+}
