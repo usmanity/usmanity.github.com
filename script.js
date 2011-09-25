@@ -10,3 +10,10 @@ viewportmeta.content = 'width=device-width, minimum-scale=0.25, maximum-scale=1.
 $(document).ready(function(){ 
     $('ul').slideDown('slow');
 });
+
+$('#sf').live('click',function(){
+  $('#map').css('display','block');
+  $('#main_content').css('height','720px');
+  $('#good_music').css('margin-top', '512px');
+  $('#shadows').css('background-color', 'black');
+});
