@@ -174,7 +174,7 @@ nav h1 a{
 #main_content{
     margin: 5%;
     font-family: 'Droid Sans', 'lucida grande', sans-serif;
-    background-color: rgba(248, 248, 248, 0.7);
+    background-color: rgba(248, 248, 248, 0.5);
     padding: 30px;
     border-radius: 4px;
     -webkit-border-radius: 4px;
