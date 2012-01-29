@@ -1,60 +1,89 @@
-<!doctype html>
-<html>
-<head>
-  <title>usmanity</title>
-  <link rel="stylesheet" type="text/css" href="style.css" />
-  <link rel="stylesheet" type="text/css" media="only screen and (max-device-width: 480px)" href="480.css" />
-  <link href='http://fonts.googleapis.com/css?family=Arimo:regular,bold|Copse' rel='stylesheet' type='text/css'/>
-  <link href='http://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'/>
-  <script src='http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js'></script>
-  <script src='script.js'></script>
-  <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
-</head>
-<body>
-  <div id="shadows">
-  <div id="container">
-    <nav>
-      <ul>
-      <li><a href="http://blog.usmanity.com">Blog</a></li>
-      <li><a href="http://twitter.com/usmanity">Twitter</a></li>
-      <li><a href="http://last.fm/user/usman6">Last.fm</a></li>
-      </ul>
-    <h1 id="head_title">
-        <a href="https://plus.google.com/112046865183458316013/posts">Muhammad</a>
-    </h1>
-    </nav>
-  </div>
-  <div id="main_content">
-    <div hello>
-        Hello.
-    </div>
-    <div about>
-    <p>
-    I'm a web developer. I currently work at a <a href="http://billfloat.com">startup</a> in <a href="http://g.co/maps/xsnjq">San Francisco</a>.
-    <aside id="map">
-      <div id="wrapper">
-      <hr id="top"/>
-      <span class="arrow-up"></span>
-      <div id="img_wrapper">
-        <img src="bsf.png"/>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Muhammad Usman</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <link href="bootstrap/brad/assets/css/bootstrap.css" rel="stylesheet">
+    <link href="bootstrap/brad/assets/css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="bootstrap/brad/assets/css/giambi.css" rel="stylesheet">
+    <link href="bootstrap/brad/assets/js/google-code-prettify/prettify.css" rel="stylesheet">
+    <link href="css-social-buttons/css/zocial.css" rel="stylesheet">
+
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="apple-touch-icon-114x114.png">
+  </head>
+
+  <body data-spy="scroll" data-target=".subnav" data-offset="50">
+
+
+  <!-- Navbar
+    ================================================== -->
+    <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="brand" href="./index.html">Muhammad</a>
+          <div class="nav-collapse">
+            <button type="button" href="http://fb.me/usmanity" class="zocial icon facebook">
+              <span>Facebook</span>
+            </button>
+          </div>
+        </div>
       </div>
-      <hr id="bottom"/>
     </div>
-    </aside>
-    </p>
-    <p id="good_music">
-      I love <a href="http://open.spotify.com/user/usmanity/playlist/6ABvWjM278sAAkc13DqrS6">good</a> music. 
-    </p>
-    <br/>
-  </div>
 
-</div>
-</div>
+    <div class="container">
 
-  <footer>
-  <a href="http://open.spotify.com/user/usmanity">
-    <img src="https://www.spotify.com/static/images/social-badge-en.png" alt="Follow me on Spotify" title="Follow me on Spotify" style="">
-  </a>
-  </footer>
-</body>
+      <div id="overview">
+
+        <!-- Masthead
+        ================================================== -->
+        <header class="jumbotron masthead">
+          <div class="inner">
+            <h1>Hello.</h1>
+            <p>I'm Muhammad Usman.</p>
+          </div>
+
+        </header>
+
+        <hr class="soften">
+
+        <div class="marketing">
+          <h1>A little bit about me</h1>
+          <div class="row">
+            <div class="span4">
+              <h2>Work</h2>
+              <p>I write code at <a href="http://billfloat.com">BillFloat.</a></p>
+            </div>
+            <div class="span4">
+              <h2>Love</h2>
+              <p>I love <a href="http://open.spotify.com/user/usmanity">music</a> and 
+              <a href="http://instagrid.me/usmanity/">photos</a>.</p>
+            </div>
+            <div class="span4">
+              <h2>Life</h2>
+              <p>I live in San Francisco, CA.</p>
+            </div>
+          </div><!--/row-->
+
+        </div><!-- /.marketing -->
+      </div><!-- /#overview -->
+
+      <footer class="footer">
+        <p class="pull-right bolt-action"><a href="#">Back to top</a></p>
+        <p>Built using <a href="http://twitter.github.com/bootstrap">Bootstrap</a> and Zocial icons</p>
+      </footer>
+
+    </div>
+  </body>
 </html>
