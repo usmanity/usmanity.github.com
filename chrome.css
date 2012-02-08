@@ -1,0 +1,16 @@
+
+body{
+  font-family: 'Droid sans';
+  font-size: 13px;
+  color: #444;
+  background: #feefee;
+  padding: 0 100px;
+}
+p{
+  font-family: 'Droid serif';
+  font-size: 13px;
+}
+h1,h2,h3,h4,h5,h6{
+  font-family: Rockwell;
+  color: #333;
+}
