@@ -3,6 +3,10 @@
 }
 h2 {
   font-size: 70px;
+  margin-bottom: 20px;
+}
+ul.links {
+  padding-top: 20px;
 }
 ul.links li {
   list-style: none;
