@@ -21,6 +21,6 @@ ul.links li a:hover {
   text-decoration: none;
 
 }
-.masthead {
-  margin-top: 2px;
+#links .masthead {
+  margin-top: -36px;
 }
