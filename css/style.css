@@ -1,11 +1,10 @@
 * { margin: 0; padding: 0; }
+html, body { height: 100%; }
 body {
   font-family: sans-serif;
   background-color: rgba(25, 25, 140, 0.5);
   color: #fff;
   line-height: 125%;
-  height: 100% !important;
-  display: block;
 }
 nav ul {
   list-style: none;
@@ -31,14 +30,15 @@ div[main]{
   clear: both;
   padding: 30px 10%;
   width: 80%;
-  min-height: 90%;
+  min-height: 80%;
+  margin-bottom: 50px;
 }
 footer {
   text-align: center;
   clear: both;
   font-size: 10px;
   position: relative;
-  height: 40px;
+  margin-top: -50px;
 }
 h1 {
   font-size: 35px;
