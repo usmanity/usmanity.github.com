@@ -6,16 +6,17 @@
   <link rel="stylesheet" href="/css/style.css" />
 </head>
 <body>
-  
-  {% include header.md %}
+  <div class="container">
+    {% include header.md %}
 
-  <div main>
-    {{ content }}
+    <div main>
+      {{ content }}
+    </div>
+
+    <footer>
+      Copyright 2012, Muhammad Usman.
+      <a class="pull-right" href="/contact">Contact</a>
+    </footer>
   </div>
-
-  <footer>
-    Copyright 2012, Muhammad Usman.
-    <a class="pull-right" href="/contact">Contact</a>
-  </footer>
 </body>
 </html>
