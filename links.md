@@ -5,10 +5,12 @@ title: Links
 
 # Links
 
-[Twitter](http://twitter.com/usmanity)
-[Github](http://github.com/usmanity)
-[Flickr](http://www.flickr.com/photos/muhammad-usman/)
-[Spotify](http://open.spotify.com/user/usmanity)
-[Instagram](http://instagrid.me/usmanity)
-[Facebook](http://facebook.com/usmanity)
-[Pinterest](http://pinterest.com/usmanity)
+<div id="links">
+  <a href="http://twitter.com/usmanity">Twitter</a>
+  <a href="http://github.com/usmanity">Github</a>
+  <a href="http://www.flickr.com/photos/muhammad-usman/">Flickr</a>
+  <a href="http://open.spotify.com/user/usmanity">Spotify</a>
+  <a href="http://instagrid.me/usmanity">Instagram</a>
+  <a href="http://facebook.com/usmanity">Facebook</a>
+  <a href="http://pinterest.com/usmanity">Pinterest</a>
+</div>

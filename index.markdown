@@ -3,8 +3,8 @@ layout: default
 title: Homepage | Muhammad Usman
 ---
 
-# Hello 
+# Hello.
 ## I'm Muhammad Usman
 
-I'm a web developer living in San Francisco, this is my homepage.
+A front-end web developer living in San Francisco, this is my homepage.
 You can find out more about me or contact me here.

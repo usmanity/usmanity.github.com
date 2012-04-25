@@ -3,22 +3,16 @@
 <head>
   <meta http-equiv="content-type" content="text/html; charset=utf-8" />
 
-  <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="me.css" />
+  <link rel="stylesheet" href="/css/style.css" />
+  <link rel="stylesheet" href="/css/me.css" />
 </head>
 <body>
-  <header>
-    <nav>
-      <ul>
-        <li><a href="/">Home</a></li>
-        <li><a href="/about">About</a></li>
-        <li><a href="/contact">Contact</a></li>
-        <li><a href="/links">Links</a></li>
-      </ul>
-    </nav>
-  </header>
 
-  {{ content }}
+  {% include header.md %}
+
+  <div main>
+    {{ content }}
+  </div>
 
   <footer>
     Copyright 2012, Muhammad Usman.
