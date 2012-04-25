@@ -6,9 +6,11 @@ body {
   color: #fff;
   line-height: 125%;
 }
+.clear, footer, nav ul, div[main], #links, #links a { /* clear all these*/
+  clear: both;
+}
 nav ul {
   list-style: none;
-  clear: both;
   display: block;
   width: 100%;
   height: 30px;
@@ -27,7 +29,6 @@ a {
   color: #fff;
 }
 div[main]{
-  clear: both;
   padding: 30px 10%;
   width: 80%;
   min-height: 80%;
@@ -35,7 +36,6 @@ div[main]{
 }
 footer {
   text-align: center;
-  clear: both;
   font-size: 10px;
   position: relative;
   margin-top: -50px;
@@ -49,6 +49,5 @@ h2 {
   line-height: 35px;
 }
 #links, #links a {
-  clear: both;
   float: left;
 }
