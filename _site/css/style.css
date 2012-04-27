@@ -40,6 +40,8 @@ div[main]{
   border-radius: 0;
   box-shadow: 15px 15px 0px #A53C90;
   margin-bottom: 70px;
+  font-size: 20px;
+  font-weight: 200;
 }
 footer {
   text-align: center;
