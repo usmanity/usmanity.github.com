@@ -50,6 +50,15 @@ footer {
 h1 {
   font-size: 35px;
   line-height: 45px;
+  margin: -20px;
+  margin-bottom: 10px;
+  padding: 10px 20px;
+  background-color: #B5C5BD;
+  color: #123456;
+  text-shadow: 0 1px 0 white;
+  box-shadow: 0 1px 0 white;
+  border-bottom: 1px solid #909090;
+  width: 100%;
 }
 h2 {
   font-size: 18px;
