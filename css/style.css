@@ -2,9 +2,12 @@
 html, body { height: 100%; }
 body {
   font-family: sans-serif;
-  background-color: rgba(25, 25, 140, 0.5);
-  color: #fff;
-  line-height: 125%;
+  background-image: url('/images/aaa.png');
+  background-repeat: repeat-x;
+  background-color: #D5E8CE;
+  background-size: 40%;
+  color: #111;
+  padding-top: 5px;
 }
 .clear, footer, nav ul, div[main], #links, #links a { /* clear all these*/
   clear: both;
@@ -26,13 +29,17 @@ nav li {
 }
 a {
   text-decoration: none;  
-  color: #fff;
+  color: #111;
 }
 div[main]{
-  padding: 30px 10%;
-  width: 80%;
+  padding: 20px;
+  width: 70%;
   min-height: 80%;
-  margin-bottom: 50px;
+  margin: auto;
+  border: 1px solid #A53C90;
+  border-radius: 0;
+  box-shadow: 15px 15px 0px #A53C90;
+  margin-bottom: 70px;
 }
 footer {
   text-align: center;
@@ -50,4 +57,10 @@ h2 {
 }
 #links, #links a {
   float: left;
+}
+@media (max-width: 480px) {
+  body {
+    background-image: url('/images/muted.png');
+    background-size: 100%;
+  }
 }
