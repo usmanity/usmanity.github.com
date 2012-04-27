@@ -4,7 +4,7 @@ body {
   font-family: 'helvetica neue', helvetica, tahoma, sans-serif;
   background-image: url('/images/aaa.png');
   background-repeat: repeat-x;
-  background-color: #D5E8CE;
+  background-color: rgba(213, 232, 206, 0.7);
   background-size: 40%;
   color: #111;
   padding-top: 5px;
