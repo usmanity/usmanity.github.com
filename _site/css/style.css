@@ -16,7 +16,8 @@ nav ul {
   list-style: none;
   display: block;
   width: 100%;
-  height: 30px;
+  height: 45px;
+  margin-top: 10px;
 }
 nav li {
   float: left;
