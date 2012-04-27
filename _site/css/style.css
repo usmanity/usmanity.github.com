@@ -72,7 +72,7 @@ h2 {
 }
 @media (max-width: 480px) {
   body {
-    background-image: url('/images/muted.png');
+    background-image: url('/images/bored.png');
     background-size: 100%;
   }
 }
