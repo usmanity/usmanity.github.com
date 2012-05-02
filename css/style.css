@@ -2,12 +2,9 @@
 html, body { height: 100%; }
 body {
   font-family: 'helvetica neue', helvetica, tahoma, sans-serif;
-  background-image: url('/images/aaa.png');
-  background-repeat: repeat-x;
   background-color: rgba(213, 232, 206, 0.7);
   background-size: 40%;
   color: #111;
-  padding-top: 5px;
 }
 .clear, footer, nav ul, div[main], #links, #links a { /* clear all these*/
   clear: both;
@@ -35,7 +32,7 @@ a {
 div[main]{
   padding: 20px;
   width: 70%;
-  min-height: 80%;
+  min-height: 287px;
   margin: auto;
   border: 1px solid #A53C90;
   border-radius: 0;
@@ -69,10 +66,4 @@ h2 {
 }
 #links, #links a {
   float: left;
-}
-@media (max-width: 480px) {
-  body {
-    background-image: url('/images/bored.png');
-    background-size: 100%;
-  }
 }
