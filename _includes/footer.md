@@ -1,4 +1,4 @@
 <footer>
   <a href="/contact">Contact</a> |
-  v2.4 'Derezzed'
+  v2.5 'Derezzed'
 </footer>
