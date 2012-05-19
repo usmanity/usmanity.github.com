@@ -2,12 +2,11 @@
 html, body { height: 100%; }
 body {
   font-family: 'helvetica neue', helvetica, tahoma, sans-serif;
-  background-image: url('/images/aaa.png');
-  background-repeat: repeat-x;
   background-color: rgba(213, 232, 206, 0.7);
   background-size: 40%;
   color: #111;
-  padding-top: 5px;
+  background-image: url('/images/twin.png');
+  background-size: auto;
 }
 .clear, footer, nav ul, div[main], #links, #links a { /* clear all these*/
   clear: both;
@@ -56,11 +55,8 @@ h1 {
   margin: -20px;
   margin-bottom: 10px;
   padding: 10px 20px;
-  background-color: #B5C5BD;
   color: #123456;
-  text-shadow: 0 1px 0 white;
-  box-shadow: 0 1px 0 white;
-  border-bottom: 1px solid #909090;
+  text-shadow: 0 1px 0 rgba(200, 200, 255, 0.5);
   width: 100%;
 }
 h2 {
@@ -69,10 +65,4 @@ h2 {
 }
 #links, #links a {
   float: left;
-}
-@media (max-width: 480px) {
-  body {
-    background-image: url('/images/bored.png');
-    background-size: 100%;
-  }
 }
