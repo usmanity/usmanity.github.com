@@ -158,29 +158,29 @@ $.ajaxSetup({
       });
 
       // refresh if playcounts have changed, no UI changes if no update
-//     var refreshId = setInterval(function() {
-//       $.ajax({
-//         type: "GET",
-//         url: "http://ws.audioscrobbler.com/2.0/?format=json&method=user.getinfo&api_key=641ea11bb6f5ba6f6013588f4a4dc927&",
-//         data: dataString,
-//         success: function(data) {
-//
-//           var updatedCount = data.user.playcount;
-//           var currentCount = $("#playcount").text();
-//           console.log("Current count: " + currentCount);
-//           console.log("Updated count: " + updatedCount);
-//
-//           if (updatedCount != currentCount ) {
-//             $("#playcount").text(updatedCount).fadeIn();
-//             currentCount = "";
-//             $("#playcount").addClass("yellow").removeClass("fade-yellow");
-//             setTimeout(function() {
-//               $("#playcount").addClass("fade-yellow").removeClass("yellow");
-//             }, 1000);
-//           }
-//         }
-//       });
-//     }, 5000);
+     var refreshId = setInterval(function() {
+       $.ajax({
+         type: "GET",
+         url: "http://ws.audioscrobbler.com/2.0/?format=json&method=user.getinfo&api_key=641ea11bb6f5ba6f6013588f4a4dc927&",
+         data: dataString,
+         success: function(data) {
+
+           var updatedCount = data.user.playcount;
+           var currentCount = $("#playcount").text();
+           console.log("Current count: " + currentCount);
+           console.log("Updated count: " + updatedCount);
+
+           if (updatedCount != currentCount ) {
+             $("#playcount").text(updatedCount).fadeIn();
+             currentCount = "";
+             $("#playcount").addClass("yellow").removeClass("fade-yellow");
+             setTimeout(function() {
+               $("#playcount").addClass("fade-yellow").removeClass("yellow");
+             }, 1000);
+           }
+         }
+       });
+     }, 5000);
       return false;
     }
   });
