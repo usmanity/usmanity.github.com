@@ -40,8 +40,9 @@ title: Resume - Muhammad Usman
 Some of the front-end related work I've done here includes:
 <ul>
   <li>Redesigned every page on the site with new design.</li>
-  <li>Introduced SASS and moved code into scss from SCSS.</li>
-  <li>Maintained support on Internet Explorer 7.</li>
+  <li>Introduced SASS and moved code into SCSS from CSS.</li>
+  <li>Launched mobile web app, I did the design and some rails
+work.</li>
   <li>Introduced Bootstrap, latest jQuery, and good CSS structure.</li>
 </ul>
 
