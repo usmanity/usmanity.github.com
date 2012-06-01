@@ -10,7 +10,8 @@ $.ajaxSetup({
 
     events: {
       'click .button' : 'getStats',
-      'submit' : 'getStats'
+      'submit' : 'getStats',
+      'keypress #username' : 'lowerUsername'
     },
 
     initialize: function() {
@@ -20,6 +21,10 @@ $.ajaxSetup({
 
     render: function(){
       $("#js-user").removeClass("hide");
+    },
+
+    lowerUsername: function() {
+      $("#username").val($("#username").val().toLowerCase());
     },
 
     getStats: function(){
