@@ -55,7 +55,8 @@ h1 {
   font-size: 120px;
   line-height: 106px;
   color: white;
-  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.8); }
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.8);
+  margin-left: 10px; }
 
 h2 {
   color: transparent;
@@ -83,7 +84,7 @@ h2 {
     color: white; }
     .about-wrapper .bubble a {
       color: #F2D99C;
-      text-decoration: dotted; }
+      border-bottom: 1px dotted #F2D99C; }
   .about-wrapper .bubble-triangle {
     width: 0;
     height: 0;
@@ -112,3 +113,7 @@ h2 {
     margin-top: -50px;
     margin-bottom: 40px;
     display: block; }
+
+.search {
+  margin: auto;
+  width: 280px; }
