@@ -28,31 +28,39 @@
 </div>
 
 <div id="user-stats" class="hide">
+
+<div class="about-wrapper">
+
   <h2>About</h2>
-
-
-  <div class="info hide">
-    <img id="user-avatar"/>
+  <div class="bubble top">
+    <span class="bubble-triangle top"></span>
+    <div class="info hide">
+      <img id="user-avatar"/>
+    </div>
+    <div class="info hide">
+      <span>Total Plays: </span>
+      <span id="playcount"></span>
+    </div>
+    <div class="info hide">
+      <span>Username: </span>
+      <span id="user-id"><a id="user-url"></a></span>
+    </div>
+    <div class="info hide">
+      <span>Real Name: </span>
+      <span id="user-name"></span>
+    </div>
   </div>
-  <div class="info hide">
-    <span>Total Plays: </span>
-    <span id="playcount"></span>
-  </div>
-  <div class="info hide">
-    <span>Username: </span>
-    <span id="user-id"><a id="user-url"></a></span>
-  </div>
-  <div class="info hide">
-    <span>Real Name: </span>
-    <span id="user-name"></span>
-  </div>
 
+</div>
 
+<div class="artist-wrapper">
   <h2>Top Artists</h2>
-  <div class="info">
+  <div class="info bubble">
+    <span class="bubble-triangle top"></span>
     <ol id="artists">
     </ol>
   </div>
+</div>
 
 </div>
 
