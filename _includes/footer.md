@@ -1,6 +1,6 @@
 <footer>
   <a href="/contact">Contact</a> |
-  v3.1 'Metal Machine'
+  v3.2 'Created'
 </footer>
 <script type="text/javascript">
 
