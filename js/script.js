@@ -1,6 +1,4 @@
-$.ajaxSetup({
-  cache: false
-});
+
 
 (function($){
 
@@ -55,6 +53,7 @@ $.ajaxSetup({
         type: "GET",
         url: "http://ws.audioscrobbler.com/2.0/?format=json&method=user.getinfo&api_key=641ea11bb6f5ba6f6013588f4a4dc927&",
         data: dataString,
+        dataType: "jsonp",
         success: function(data) {
           $("#top-artists").removeClass('hide');
           $(".info").fadeIn().removeClass('hide');
@@ -74,6 +73,7 @@ $.ajaxSetup({
          type: "GET",
          url: "http://ws.audioscrobbler.com/2.0/?format=json&method=user.getinfo&api_key=641ea11bb6f5ba6f6013588f4a4dc927&",
          data: dataString,
+         dataType: "jsonp",
          success: function(data) {
 
            var updatedCount = data.user.playcount;
