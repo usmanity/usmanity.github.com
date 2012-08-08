@@ -9,8 +9,8 @@ title: Resume - Muhammad Usman
   <p>
     I'm a web developer with a love for user experience. I live in San
     Francisco and I like photography. When I'm not coding, I like to eat
-    good pizza, go try to discover something new in San Francisco, read
-    about space. I also love NASA.
+    good pizza, try to discover something new in San Francisco, read
+    about space technologies.
   </p>
 </div>
 <hr/>
