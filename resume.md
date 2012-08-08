@@ -39,10 +39,10 @@ title: Resume - Muhammad Usman
 <p>
 Some of the front-end related work I've done here includes:
 <ul>
+  <li>Worked on in-store mobile product, BillFloat being a platform for retails to sell.</li>
   <li>Redesigned every page on the site with new design.</li>
-  <li>Introduced SASS and moved code into SCSS from CSS.</li>
-  <li>Launched mobile web app, I did the design and some rails
-work.</li>
+  <li>Introduced SASS which allowed for quicker styling changes.</li>
+  <li>Designed and built mobile webapp.</li>
   <li>Introduced Bootstrap, latest jQuery, and good CSS structure.</li>
 </ul>
 
