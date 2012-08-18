@@ -1,6 +1,6 @@
 $(function(){
   $.ajax({
-    url: 'http://api.flickr.com/services/rest/?method=flickr.photosets.getPhotos&api_key=9b82d57f984c408557a3003c019b8496&photoset_id=72157630981136960&extras=url_m&format=json&nojsoncallback=1&auth_token=72157630981167452-004623d512f08658&api_sig=fa81ccf0139568a62c8256f4ec9a60e5',
+    url: 'http://api.flickr.com/services/rest/?method=flickr.photosets.getPhotos&api_key=94549edc5a4a57eb27e08e164d359b6c&photoset_id=72157630981136960&extras=url_m&format=json&nojsoncallback=1&api_sig=f6bd4d006fb891a184509a7b102c3571',
     success: function(data) {
       var photos = data.photoset.photo;
       console.log(photos)
