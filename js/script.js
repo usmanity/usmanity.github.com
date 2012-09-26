@@ -29,6 +29,7 @@
       // validate and process form here...
       var username = $("#username").val();
       var dataString = 'user='+username;
+      $('body').addClass('tracks');
 
       $(".btn").button('loading');
       $.ajax({
@@ -75,8 +76,15 @@
         success: function(data) {
           console.log('here are the tracks');
           j = data;
-          $(".track").html(j.recenttracks.track[0].name);
-          $(".artist").html(j.recenttracks.track[0].artist.name);
+          if ( null == j.recenttracks.track[0]["@attr"] ) {
+            $(".status").html('Most recent track: ')
+            $(".track").html(j.recenttracks.track[1].name);
+            $(".artist").html(j.recenttracks.track[1].artist.name);
+          } else {
+            $(".status").html('Now playing: ')
+            $(".track").html(j.recenttracks.track[0].name);
+            $(".artist").html(j.recenttracks.track[0].artist.name);
+          }
         }
       });
 
