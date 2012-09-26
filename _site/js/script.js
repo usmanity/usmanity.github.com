@@ -78,11 +78,11 @@
           j = data;
           if ( null == j.recenttracks.track[0]["@attr"] ) {
             $(".status").html('Most recent track: ')
-            $(".track").html(j.recenttracks.track[1].name);
-            $(".artist").html(j.recenttracks.track[1].artist.name);
+            $(".track").html(j.recenttracks.track[0].name);
+            $(".artist").html(j.recenttracks.track[0].artist.name);
           } else {
             $(".status").html('Now playing: ')
-            $(".track").html(j.recenttracks.track[0].name);
+            $(".track").html('"' + j.recenttracks.track[0].name + '" ');
             $(".artist").html(j.recenttracks.track[0].artist.name);
           }
         }
