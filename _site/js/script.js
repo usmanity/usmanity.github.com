@@ -74,7 +74,6 @@
         data: dataString,
         dataType: "jsonp",
         success: function(data) {
-          console.log('here are the tracks');
           j = data;
           if ( null == j.recenttracks.track[0]["@attr"] ) {
             $(".status").html('Most recent track: ')
@@ -90,6 +89,7 @@
 
       // refresh if playcounts have changed, no UI changes if no update
      var refreshId = setInterval(function() {
+      console.log("fetch new playcounts")
        $.ajax({
          type: "GET",
          url: "http://ws.audioscrobbler.com/2.0/?format=json&method=user.getinfo&api_key=641ea11bb6f5ba6f6013588f4a4dc927&",
@@ -112,7 +112,25 @@
            }
          }
        });
-     }, 45000);
+      $.ajax({
+        type: "GET",
+        url: "http://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&api_key=b25b959554ed76058ac220b7b2e0a026&format=json&",
+        data: dataString,
+        dataType: "jsonp",
+        success: function(data) {
+          j = data;
+          if ( null == j.recenttracks.track[0]["@attr"] ) {
+            $(".status").html('Most recent track: ')
+            $(".track").html(j.recenttracks.track[0].name);
+            $(".artist").html(j.recenttracks.track[0].artist.name);
+          } else {
+            $(".status").html('Now playing: ')
+            $(".track").html('"' + j.recenttracks.track[0].name + '" ');
+            $(".artist").html(j.recenttracks.track[0].artist.name);
+          }
+        }
+      });
+     }, 5000);
       return false;
     }
   });
