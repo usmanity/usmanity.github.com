@@ -67,6 +67,19 @@
         }
       });
 
+      $.ajax({
+        type: "GET",
+        url: "http://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&api_key=b25b959554ed76058ac220b7b2e0a026&format=json&",
+        data: dataString,
+        dataType: "jsonp",
+        success: function(data) {
+          console.log('here are the tracks');
+          j = data;
+          $(".track").html(j.recenttracks.track[0].name);
+          $(".artist").html(j.recenttracks.track[0].artist.name);
+        }
+      });
+
       // refresh if playcounts have changed, no UI changes if no update
      var refreshId = setInterval(function() {
        $.ajax({
@@ -91,7 +104,7 @@
            }
          }
        });
-     }, 5000);
+     }, 45000);
       return false;
     }
   });
