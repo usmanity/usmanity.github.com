@@ -3,16 +3,67 @@
       <title>{Title}</title>
       <link rel="shortcut icon" href="{Favicon}">
       <link rel="alternate" type="application/rss+xml" href="{RSS}">
+      <link href='http://fonts.googleapis.com/css?family=Lato:100,400|Julius+Sans+One' rel='stylesheet' type='text/css'>
+
       {block:Description}
           <meta name="description" content="{MetaDescription}" />
       {/block:Description}
+      <style>
+        body {
+          font-family: Lato, sans-serif;
+          margin: 0;
+          padding: 0;
+          color: rgba(10, 10, 10, 0.7);
+        }
+        #posts {
+          width: 760px;
+          margin: auto;
+        }
+        nav {
+          width: 200px;
+          float: left;
+          margin: 80px 0 20px 40px;
+        }
+        h1 {
+          font-family: 'Julius Sans One', sans-serif;
+          font-size: 15px;
+          color: white;
+          background-color: #FFC655;
+          margin: 0 0 30px;
+          padding: 6px;
+          text-align: right;
+        }
+        a {
+          text-decoration: none;
+        }
+        .posts {
+          border-bottom: 1px solid #ccc;
+        }
+        .airplane {
+          font-size: 50px;
+          -webkit-transform: rotate(-45deg);
+          left: 0;
+          position: fixed;
+          bottom: 0;
+          background-color: #FC2;
+          width: 20px;
+          padding: 25px;
+          margin-bottom: -40px;
+          margin-left: -20px;
+          border-radius: 60px;
+          display: none;
+        }
+      </style>
   </head>
   <body>
     <h1>{Title}</h1>
-
     {block:Description}
         <p id="description">{Description}</p>
     {/block:Description}
+
+    <nav>
+      {Title}
+    </nav>
 
     <div id="posts">
       {block:Posts}
@@ -119,5 +170,6 @@
 
       <a href="/archive">Archive</a>
     </p>
+    <div class="airplane">✈</div>
   </body>
 </html>
