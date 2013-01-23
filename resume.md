@@ -15,7 +15,6 @@ title: Resume - Muhammad Usman
 </div>
 <hr/>
 <div class="section">
-
 <h2> Work Experience </h2>
 
 <h3>SquareTrade.com</h3>
@@ -32,12 +31,14 @@ title: Resume - Muhammad Usman
   and Drupal mix. I am a part of a front-end team of 3 people, working alongside
   java developers. My front-end work here includes:
 </p>
+<p>
 <ul>
   <li>Redesigning the overall look of site.</li>
   <li>Maintaining Drupal and Drupal based pages</li>
   <li>Refactoring code on JSP pages</li>
   <li>Introduced SASS to the workflow.<li>
 </ul>
+</p>
 
 <h3>BillFloat.com</h3>
 <div class="job_subtitle">
@@ -49,8 +50,8 @@ title: Resume - Muhammad Usman
   </span>
 </div>
 <p>
-  I started here working on the front-end redesign and to bring some new
-  features into the UI. I've likened my work as user experience designer
+  I worked on the front-end redesign of the whole site.
+  I've likened my work as user experience designer
   because all of it is ultimately seen by users. I code here using SCSS
   and javascript.  Although I'm primarily front-end, I've written backend
   code along with tests using ruby, ruby on rails, and rSpec.
