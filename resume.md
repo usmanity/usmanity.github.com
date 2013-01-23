@@ -45,6 +45,29 @@ Some of the front-end related work I've done here includes:
 </ul>
 </p>
 
+<h3>SquareTrade.com</h3>
+<div class="job_subtitle">
+  <span class="position_there">
+    Front-end Developer
+  </span>
+  <span class="time_there">
+    (September 2012 - <em>Present</em>)
+  </span>
+</div>
+<p>
+  I work on the Web team implementing new features. The front-end is a java
+  and Drupal mix. I am a part of a front-end team of 3 people, working alongside
+  java developers. My front-end work here includes:
+</p>
+<p>
+<ul>
+  <li>Redesigning the overall look of site.</li>
+  <li>Maintaining Drupal and Drupal based pages</li>
+  <li>Refactoring code on JSP pages</li>
+  <li>Introduced SASS to the workflow.<li>
+</ul>
+</p>
+
 <h3>DoctorBase.com</h3>
 <div class="job_subtitle">
 <span class="position_there">
