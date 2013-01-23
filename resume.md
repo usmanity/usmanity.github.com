@@ -18,6 +18,26 @@ title: Resume - Muhammad Usman
 
 <h2> Work Experience </h2>
 
+<h3>SquareTrade.com</h3>
+<div class="job_subtitle">
+  <span class="position_there">
+    Front-end Developer
+  </span>
+  <span class="time_there">
+    (September 2012 - <em>Present</em>)
+  </span>
+</div>
+<p>
+  I work on the Web team implementing new features. The front-end is a java
+  and Drupal mix. I am a part of a front-end team of 3 people, working alongside
+  java developers. My front-end work here includes:
+</p>
+<ul>
+  <li>Redesigning the overall look of site.</li>
+  <li>Maintaining Drupal and Drupal based pages</li>
+  <li>Refactoring code on JSP pages</li>
+  <li>Introduced SASS to the workflow.<li>
+</ul>
 
 <h3>BillFloat.com</h3>
 <div class="job_subtitle">
@@ -25,16 +45,15 @@ title: Resume - Muhammad Usman
   Front-end Developer
   </span>
   <span class="time_there">
-    (August 2011 - <em>Present</em>)
+    (August 2011 - September 2012)
   </span>
 </div>
 <p>
-  I started here working on the front-end redesign and bring some new
-  features into the UI. I write code everyday but I like to treat my work
-  as user experience designer because all of it is ultimately seen by
-  users. I code here using SCSS and javascript.
-  Although I'm primarily front-end, I've written backend code along with
-  tests using ruby, ruby on rails, and rSpec.
+  I started here working on the front-end redesign and to bring some new
+  features into the UI. I've likened my work as user experience designer
+  because all of it is ultimately seen by users. I code here using SCSS
+  and javascript.  Although I'm primarily front-end, I've written backend
+  code along with tests using ruby, ruby on rails, and rSpec.
 </p>
 <p>
 Some of the front-end related work I've done here includes:
@@ -45,7 +64,6 @@ Some of the front-end related work I've done here includes:
   <li>Designed and built mobile webapp.</li>
   <li>Introduced Bootstrap, latest jQuery, and good CSS structure.</li>
 </ul>
-
 </p>
 
 <h3>DoctorBase.com</h3>
