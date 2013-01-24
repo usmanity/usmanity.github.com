@@ -9,3 +9,5 @@ title: Homepage | Muhammad Usman
 A front-end web developer living in San Francisco, this is my homepage.
 You can find out more [about me](/about) or [contact me here](/contact).
 
+[I blog on tumblr.](http://blog.usmanity.com)
+
