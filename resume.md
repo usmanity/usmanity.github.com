@@ -15,26 +15,24 @@ title: Resume - Muhammad Usman
 </div>
 <hr/>
 <div class="section">
-
 <h2> Work Experience </h2>
 
 
 <h3>BillFloat.com</h3>
 <div class="job_subtitle">
   <span class="position_there">
-  Front-end Developer
+    Front-end Developer
   </span>
   <span class="time_there">
-    (August 2011 - <em>Present</em>)
+    (August 2011 - September 2012)
   </span>
 </div>
 <p>
-  I started here working on the front-end redesign and bring some new
-  features into the UI. I write code everyday but I like to treat my work
-  as user experience designer because all of it is ultimately seen by
-  users. I code here using SCSS and javascript.
-  Although I'm primarily front-end, I've written backend code along with
-  tests using ruby, ruby on rails, and rSpec.
+  I worked on the front-end redesign of the whole site.
+  I've likened my work as user experience designer
+  because all of it is ultimately seen by users. I code here using SCSS
+  and javascript.  Although I'm primarily front-end, I've written backend
+  code along with tests using ruby, ruby on rails, and rSpec.
 </p>
 <p>
 Some of the front-end related work I've done here includes:
@@ -45,7 +43,6 @@ Some of the front-end related work I've done here includes:
   <li>Designed and built mobile webapp.</li>
   <li>Introduced Bootstrap, latest jQuery, and good CSS structure.</li>
 </ul>
-
 </p>
 
 <h3>DoctorBase.com</h3>
