@@ -3,18 +3,20 @@
       <title>{Title}</title>
       <link rel="shortcut icon" href="{Favicon}">
       <link rel="alternate" type="application/rss+xml" href="{RSS}">
-      <link href='http://fonts.googleapis.com/css?family=Julius+Sans+One' rel='stylesheet' type='text/css'>
+      <link href='http://fonts.googleapis.com/css?family=Lato|Julius+Sans+One' rel='stylesheet' type='text/css'>
+
+
 
       {block:Description}
           <meta name="description" content="{MetaDescription}" />
       {/block:Description}
       <style>
         body {
-          font-family: sans-serif;
+          font-family: Lato, sans-serif;
           margin: 0;
           padding: 0;
           color: rgba(10, 10, 10, 0.7);
-          font-family: 16px;
+          font-size: 18px;
         }
         #posts {
           width: 760px;
@@ -31,16 +33,33 @@
           color: white;
           background-color: #FFC655;
           margin: 0 0 30px;
-          padding: 6px;
+          padding: 10px 6px;
           text-align: center;
         }
         a {
           text-decoration: none;
           color: rgba(105, 105, 187, 0.59);
         }
+        footer {
+          text-align: center;
+          font-size: 12px;
+          margin: 20px 0;
+        }
+        footer .pages{
+          font-size: 18px;
+        }
         .post {
           border-bottom: 1px solid rgba(25, 25, 25, 0.05);
-          padding: 10px 0;
+          padding: 30px 0;
+          text-align: center;
+        }
+        .post p {
+          text-align: left;
+        }
+        li {
+          text-align: left;
+        }
+        .video p, .photo .caption p {
           text-align: center;
         }
         .airplane {
@@ -49,23 +68,19 @@
           left: 0;
           position: fixed;
           bottom: 0;
-          background-color: #FC2;
+          background-color: rgb(252, 217, 0);
           width: 20px;
           padding: 25px;
           margin-bottom: -40px;
           margin-left: -20px;
-          border-radius: 60px;
           display: none;
         }
         h1 a {
-          color: white;
+          color: rgb(82, 68, 0);
         }
-        .post p {
-          text-align: left;
-  }
-  li {
-  text-align: left;
-  }
+        source {
+          font-size: 25px;
+        }
       </style>
   </head>
   <body>
@@ -81,42 +96,48 @@
       {block:Posts}
         {block:Text}
           <div class="post text">
-            {block:Title}
-              <h3><a href="{Permalink}">{Title}</a></h3>
-            {/block:Title}
-
-            {Body}
-            <div class="date"
-            {block:Date}
-              <a href="{Permalink}">{TimeAgo}</a>
+            <div class="heading">
+              {block:Title}
+                <h3><a href="{Permalink}">{Title}</a></h3>
+              {/block:Title}
+            </div>
+            <p>
+              {Body}
+            </p>
+            <div class="date">
+              {block:Date}
+                <a href="{Permalink}" class="date">{TimeAgo}</a>
               {/block:Date}
-      </div>
+            </div>
           </div>
         {/block:Text}
 
         {block:Photo}
           <div class="post photo">
-            <img src="{PhotoURL-500}" alt="{PhotoAlt}"/>
-
+            <div class="image">
+              <img src="{PhotoURL-500}" alt="{PhotoAlt}"/>
+            </div>
             {block:Caption}
               <div class="caption">{Caption}</div>
             {/block:Caption}
             {block:Date}
-              <a href="{Permalink}">{TimeAgo}</a>
+              <a href="{Permalink}" class="date">{TimeAgo}</a>
             {/block:Date}
           </div>
         {/block:Photo}
 
         {block:Photoset}
           <div class="post photoset">
-            {Photoset-500}
+            <div class="images">
+              {Photoset-500}
+            </div>
 
             {block:Caption}
               <div class="caption">{Caption}</div>
             {/block:Caption}
           </div>
             {block:Date}
-              <a href="{Permalink}">{TimeAgo}</a>
+              <a href="{Permalink}" class="date">{TimeAgo}</a>
             {/block:Date}
         {/block:Photoset}
 
@@ -125,7 +146,7 @@
             "{Quote}"
 
             {block:Source}
-              <div class="source">{Source}</div>
+              <div class="source"> -{Source}</div>
             {/block:Source}
           </div>
         {/block:Quote}
@@ -182,17 +203,19 @@
         {/block:Posts}
     </div>
 
-    <p id="footer">
-      {block:PreviousPage}
-          <a href="{PreviousPage}">&#171; Previous</a>
-      {/block:PreviousPage}
+    <footer>
+      <div class="pages">
+        {block:PreviousPage}
+            <a href="{PreviousPage}">&#171; Previous</a>
+        {/block:PreviousPage}
 
-      {block:NextPage}
-          <a href="{NextPage}">Next &#187;</a>
-      {/block:NextPage}
-
+        {block:NextPage}
+            <a href="{NextPage}">Next &#187;</a>
+        {/block:NextPage}
+      </div>
+      <br>
       <a href="/archive">Archive</a>
-    </p>
+    <footer>
     <div class="airplane">✈</div>
   </body>
 </html>
