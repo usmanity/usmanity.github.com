@@ -1,3 +1,8 @@
+--
+layout: demo
+title: css spinner - webkit only
+--
+
 <style>
 #spinner {
   -webkit-animation: spin .5s infinite;
