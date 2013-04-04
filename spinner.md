@@ -1,7 +1,7 @@
---
+---
 layout: demo
 title: css spinner - webkit only
---
+---
 
 <style>
 #spinner {
