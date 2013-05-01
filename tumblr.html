@@ -4,8 +4,7 @@
       <link rel="shortcut icon" href="{Favicon}">
       <link rel="alternate" type="application/rss+xml" href="{RSS}">
       <link href='http://fonts.googleapis.com/css?family=Lato|Julius+Sans+One' rel='stylesheet' type='text/css'>
-      <!-- verzion 1.1 aeroplane -->
-
+      <!-- version 1.2 aeroplane -->
 
       {block:Description}
           <meta name="description" content="{MetaDescription}" />
@@ -59,7 +58,7 @@
         li {
           text-align: left;
         }
-        .video p, .photo .caption p {
+        .video p, .photo .caption p, .photoset .caption p {
           text-align: center;
         }
         .airplane {
@@ -138,10 +137,10 @@
             {block:Caption}
               <div class="caption">{Caption}</div>
             {/block:Caption}
-          </div>
             {block:Date}
               <a href="{Permalink}" class="date">{TimeAgo}</a>
             {/block:Date}
+          </div>
         {/block:Photoset}
 
         {block:Quote}
