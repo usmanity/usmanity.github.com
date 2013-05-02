@@ -12,21 +12,20 @@ body { width: 100%; height: 100%;    background-color: #e8dfeb; }
 div {
    border-radius: 4px;
    position: relative;
-   font: {
-     size: 175px;
-     family: Headland One, sans-serif;
-   }
-   p {
-     color: #6b5f6b;
-     position: fixed;
-     margin: auto;
-     width: 200px;
-     bottom: 0;
-     text-align: center;
-     margin-left: -16px;
-     -webkit-transform: rotate(-90deg);
-     -webkit-animation: fly 2s 1;
-   }
+
+   font-size: 175px;
+   font-family: Headland One, sans-serif;
+}
+div p {
+  color: #6b5f6b;
+  position: fixed;
+  margin: auto;
+  width: 200px;
+  bottom: 0;
+  text-align: center;
+  margin-left: -16px;
+  -webkit-transform: rotate(-90deg);
+  -webkit-animation: fly 2s 1;
 }
 
 @-webkit-keyframes fly {
@@ -35,7 +34,6 @@ div {
 }
 .stay { bottom: 190px !important; }
 </style>
-
 
 <div>
   <p>✈</p>
