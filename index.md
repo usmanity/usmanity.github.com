@@ -1,3 +1,8 @@
-# usmanity
+---
+layout: default
+title: landing soon &#x2708;
+---
 
-✈ Landing soon in SFO.
+
+# &#x2708; Landing soon in SFO.
+
