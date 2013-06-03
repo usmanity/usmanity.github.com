@@ -1,15 +1,34 @@
 // count.js
 // get counts of things like last.fm scrobbles
-
-u = {
+var a;
+usm = {
 	count: function(url, id) {
-		var data = '';
 		$.ajax({
 		    url: url,
 		    success: function(data){
-		      count = data.person.photos.count["_content"];
-		      $(id)[0].innerHTML = count;
+	    	  switch (id) {
+	    	  	case "#flickr":
+				      count = data.person.photos.count["_content"];
+				      $(id)[0].innerHTML = count + '<span class="type"> photos</span>';
+				      break;
+				    case "#lastfm":
+					    count = data.user.playcount;
+					    $(id)[0].innerHTML = count + '<span class="type"> songs scrobbled</span>';
+					    break;
+					  default:
+						  console.log('wtf')
+					    return data;
 		    }
-		})
+			}
+		});
 	},
+	init: function() {
+		apps = $('div[id]');
+		for (var i = 0; i < apps.length; i++){
+			url = $(apps[i]).data("url");
+			id = "#" + apps[i].id;
+			usm.count(url, id);
+		}
+	}
 }
+$(document).ready(usm.init);
