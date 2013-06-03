@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+<head>
+        <title>Counts</title>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script>
+                $.ajax({
+                  url: "http://api.flickr.com/services/rest/?method=flickr.people.getInfo&api_key=2be724fa193a2833bf95f73454710a9f&user_id=75921654%40N08&format=json&nojsoncallback=1",
+                  success: function(data){
+                    count = data.person.photos.count["_content"];
+                    $("#flickr")[0].innerHTML = count + '<span class="type"> photos</span>';
+                  }
+                });
+         
+        </script>
+        <link href='http://fonts.googleapis.com/css?family=Merriweather:400,700' rel='stylesheet' type='text/css'>
+        <style>
+                #flickr {
+                  font-size: 75px;
+                  text-align: center;
+                  margin-top: 10%;
+                  font-family: 'Merriweather', serif;
+                  font-weight: bold;
+                }
+                .type {
+                  font-size: 35px;
+                }
+        </style>
+</head>
+<body>
+        <div id="flickr">
+
+        </div>
+
+</body>
+</html>
