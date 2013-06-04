@@ -15,9 +15,6 @@ usm = {
 					    count = data.user.playcount;
 					    $(id)[0].innerHTML = count + '<span class="type"> songs scrobbled</span>';
 					    break;
-					  default:
-						  console.log('wtf')
-					    return data;
 		    }
 			}
 		});
@@ -32,3 +29,4 @@ usm = {
 	}
 }
 $(document).ready(usm.init);
+setInterval(usm.init, 5000)
