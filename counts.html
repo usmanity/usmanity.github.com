@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+<head>
+  <title>Counts</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script src="js/count.js"></script>
+<link href='http://fonts.googleapis.com/css?family=Merriweather:400,700' rel='stylesheet' type='text/css'>
+<style>
+  #flickr, #lastfm {
+    font-size: 75px;
+    text-align: center;
+    margin-top: 10%;
+    font-family: 'Merriweather', serif;
+    font-weight: bold;
+  }
+  .type {
+    font-size: 35px;
+  }
+</style>
+</head>
+<body>
+<div id="flickr" data-url="http://api.flickr.com/services/rest/?method=flickr.people.getInfo&api_key=32cf047b0ab949cd7774f44be913d817&user_id=75921654%40N08&format=json&nojsoncallback=1">
+</div>
+
+<div id="lastfm" data-url="http://ws.audioscrobbler.com/2.0/?method=user.getinfo&user=usman6&api_key=641ea11bb6f5ba6f6013588f4a4dc927&format=json">
+</div>
+
+</body>
+</html>
