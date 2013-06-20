@@ -1,0 +1,19 @@
+body { 
+  margin: 0; 
+  padding: 0;
+  font-family: "helvetica neue", helvetica, sans-serif;
+}
+section, header, footer {
+  width: 80%;
+  font-size: 25px;
+  margin: auto;
+  padding: 10px 0;
+}
+header {
+  font-weight: 700;
+  text-align: center;
+  padding: 30px 0;
+}
+footer {
+  font-size: 11px;
+}
