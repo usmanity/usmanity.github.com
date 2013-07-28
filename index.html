@@ -1,27 +1,25 @@
 <html>
 <head>
-  <title></title>
+  <title>Muhammad Usman | homepage</title>
+  <meta name="viewport" content="initial-scale = 1.0,maximum-scale = 1.0" />
   <link rel="stylesheet" href="/css/home.css">
   <script src="/js/script.js" type="text/javascript" charset="utf-8" async defer></script>
+  <script type="text/javascript">
+    now = Date.now();
+    var refresh = function(){ location.reload(); }
+    // setTimeout(refresh, 5000);
+  </script>
 </head>
 <body>
   <h1>Muhammad Usman</h1>
-  <div class="hello">
-    hello.
-  </div>
-  <div class="main">
-    <ul>
-      Projects
-      <li>cycling</li>
-      <li>orca</li>
-    </ul>
-    <ul>
-      Social
-      <li>last.fm</li>
-      <li>strava</li>
-      <li>facebook</li>
-    </ul>
-  </div>
+  <ul class="main">
+  <li><a href="http://blog.usmanity.com">Blog</a></li>
+  <li><a href="#about">About</a></li>
+  </ul>
 
+<script type="text/javascript">
+  now = Date.now() - now;
+  console.log("load time: " + now);
+</script>
 </body>
 </html>

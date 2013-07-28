@@ -1,19 +1,27 @@
 body {
   margin: 0;
   padding: 0;
+  width: 100%;
+  background: rgba(255, 255, 255, 1.0);
   font: {
     size: 16px;
     family: sans-serif;
   }
-  width: 100%;
 }
 h1 {
   text-align: center;
-  margin-top: 10px;
+  margin: 200px 0 180px;
+  font: {
+    family: helvetica, 'droid sans', sans-serif;
+    weight: 100;
+    size: 3em;
+  }
+
 }
 ul {
   padding: 0;
   margin: 0;
+  list-style: none;
   font: {
     size: 20px;
   }
@@ -23,11 +31,37 @@ ul {
     }
   }
 }
-.hello, .main {
-  width: 960px;
-  margin: auto;
-}
-.hello {
-  text-align: center;
-  
+.main {
+  width: 430px;
+  margin: 215px auto 0;
+  li {
+    transition: background-color 0.5s ease;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 1px;
+    width: 180px;
+    font: {
+      size: 36px;
+      weight: 100;
+    }
+    a {
+      display: inline-block;
+      padding: 10px 2px;
+      width: 180px;
+      text-decoration: none;
+      color: black;
+    }
+    &:first-child {
+      float: left;
+    }
+    &:last-child {
+      float: right;
+    }
+  }
+  li:hover {
+    a { 
+      color: rgb(255, 255, 255); 
+    }
+    background-color: rgba(0, 0, 0, 1.0);
+  }  
 }

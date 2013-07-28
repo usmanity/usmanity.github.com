@@ -1,0 +1,42 @@
+/*
+Syntax error: Invalid CSS after "$primary ": expected ":", was "{"
+        on line 3 of scss/colors.scss
+
+1: // colors
+2: 
+3: $primary {
+4:   color: rgba(22, 22, 29, 1.0);
+5: }
+6: 
+7: $secondary {
+8:   color: rgba(33, 33, 33, 1.0);
+
+Backtrace:
+scss/colors.scss:3
+/Users/muhammad/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/sass-3.2.10/lib/sass/scss/parser.rb:1145:in `expected'
+/Users/muhammad/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/sass-3.2.10/lib/sass/scss/parser.rb:1083:in `expected'
+/Users/muhammad/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/sass-3.2.10/lib/sass/scss/parser.rb:1078:in `tok!'
+/Users/muhammad/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/sass-3.2.10/lib/sass/scss/parser.rb:511:in `variable'
+/Users/muhammad/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/sass-3.2.10/lib/sass/scss/parser.rb:552:in `block_child'
+/Users/muhammad/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/sass-3.2.10/lib/sass/scss/parser.rb:542:in `block_contents'
+/Users/muhammad/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/sass-3.2.10/lib/sass/scss/parser.rb:82:in `stylesheet'
+/Users/muhammad/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/sass-3.2.10/lib/sass/scss/parser.rb:27:in `parse'
+/Users/muhammad/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/sass-3.2.10/lib/sass/engine.rb:342:in `_to_tree'
+/Users/muhammad/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/sass-3.2.10/lib/sass/engine.rb:315:in `_render'
+/Users/muhammad/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/sass-3.2.10/lib/sass/engine.rb:262:in `render'
+/Users/muhammad/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/sass-3.2.10/lib/sass/plugin/compiler.rb:362:in `update_stylesheet'
+/Users/muhammad/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/sass-3.2.10/lib/sass/plugin/compiler.rb:203:in `block in update_stylesheets'
+/Users/muhammad/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/sass-3.2.10/lib/sass/plugin/compiler.rb:201:in `each'
+/Users/muhammad/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/sass-3.2.10/lib/sass/plugin/compiler.rb:201:in `update_stylesheets'
+/Users/muhammad/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/sass-3.2.10/lib/sass/plugin/compiler.rb:283:in `block in watch'
+/Users/muhammad/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/sass-3.2.10/vendor/listen/lib/listen/multi_listener.rb:108:in `call'
+/Users/muhammad/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/sass-3.2.10/vendor/listen/lib/listen/multi_listener.rb:108:in `on_change'
+/Users/muhammad/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/sass-3.2.10/vendor/listen/lib/listen/multi_listener.rb:117:in `block in initialize_adapter'
+/Users/muhammad/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/sass-3.2.10/vendor/listen/lib/listen/adapters/polling.rb:56:in `call'
+/Users/muhammad/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/sass-3.2.10/vendor/listen/lib/listen/adapters/polling.rb:56:in `poll'
+/Users/muhammad/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/sass-3.2.10/vendor/listen/lib/listen/adapters/polling.rb:32:in `block in start'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Syntax error: Invalid CSS after \"$primary \": expected \":\", was \"{\"\A         on line 3 of scss/colors.scss\A \A 1: // colors\A 2: \A 3: $primary {\A 4:   color: rgba(22, 22, 29, 1.0);\A 5: }\A 6: \A 7: $secondary {\A 8:   color: rgba(33, 33, 33, 1.0);"; }
