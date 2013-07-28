@@ -25,7 +25,7 @@ ul {
   width: 430px;
   margin: 215px auto 0; }
   .main li {
-    transition: background-color 0.5s ease;
+    transition: background-color 0.2s ease;
     text-align: center;
     border: 1px solid black;
     border-radius: 1px;
