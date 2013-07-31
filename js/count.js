@@ -20,12 +20,16 @@ usm = {
 		});
 	},
 	init: function() {
-		apps = $('div[id]');
+		apps = $('.app');
+		usm.render(apps);
+	},
+	render: function(apps) {
 		for (var i = 0; i < apps.length; i++){
 			url = $(apps[i]).data("url");
 			id = "#" + apps[i].id;
 			usm.count(url, id);
 		}
+		$(".spinner").hide();
 	}
 }
 $(document).ready(usm.init);
