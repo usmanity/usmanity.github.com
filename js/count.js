@@ -29,6 +29,7 @@ usm = {
 			var id = "#" + apps[i].id;
 			usm.count(url, id);
 		}
+		$(".spinner").hide();
 	}
 }
 $(document).ready(usm.init);
