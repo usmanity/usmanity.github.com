@@ -22,7 +22,7 @@ usm = {
 	init: function() {
 		apps = $('.app');
 		usm.render(apps);
-	}
+	},
 	render: function(apps) {
 		for (var i = 0; i < apps.length; i++){
 			var url = $(apps[i]).data("url");
