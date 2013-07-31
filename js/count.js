@@ -22,15 +22,15 @@ usm = {
 	init: function() {
 		apps = $('.app');
 		usm.render(apps);
-	},
+	}
 	render: function(apps) {
 		for (var i = 0; i < apps.length; i++){
-			url = $(apps[i]).data("url");
-			id = "#" + apps[i].id;
+			var url = $(apps[i]).data("url");
+			var id = "#" + apps[i].id;
 			usm.count(url, id);
 		}
 		$(".spinner").hide();
 	}
 }
 $(document).ready(usm.init);
-setInterval(usm.init, 5000)
+setInterval(usm.init, 10000);
