@@ -21,7 +21,6 @@ usm = {
 	},
 	init: function() {
 		apps = $('.app');
-		console.log(apps);
 		usm.render(apps);
 		$(".spinner").hide();
 	},
