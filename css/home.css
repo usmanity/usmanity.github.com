@@ -27,7 +27,7 @@ ul {
   .main li {
     transition: background-color 0.2s ease;
     text-align: center;
-    border: 1px solid black;
+    border: 1px solid #383838;
     border-radius: 1px;
     width: 180px;
     font-size: 36px;
@@ -37,12 +37,33 @@ ul {
       padding: 10px 2px;
       width: 180px;
       text-decoration: none;
-      color: black; }
+      color: #383838; }
     .main li:first-child {
       float: left; }
     .main li:last-child {
       float: right; }
   .main li:hover {
-    background-color: black; }
+    background-color: #383838; }
     .main li:hover a {
       color: white; }
+
+#opener {
+  height: 100%;
+  display: block; }
+
+#me {
+  height: 100%;
+  display: block;
+  background-color: #383838;
+  color: white; }
+  #me h2 {
+    text-align: center;
+    line-height: 30px;
+    padding: 50px 0 20px;
+    font-size: 30px; }
+  #me p {
+    width: 40%;
+    margin: auto;
+    line-height: 35px;
+    font-size: 20px;
+    text-align: center; }

@@ -1,3 +1,4 @@
+$black: #383838;
 body {
   margin: 0;
   padding: 0;
@@ -31,13 +32,14 @@ ul {
     }
   }
 }
+
 .main {
   width: 430px;
   margin: 215px auto 0;
   li {
     transition: background-color 0.2s ease;
     text-align: center;
-    border: 1px solid black;
+    border: 1px solid $black;
     border-radius: 1px;
     width: 180px;
     font: {
@@ -49,7 +51,7 @@ ul {
       padding: 10px 2px;
       width: 180px;
       text-decoration: none;
-      color: black;
+      color: $black;
     }
     &:first-child {
       float: left;
@@ -62,6 +64,29 @@ ul {
     a { 
       color: rgb(255, 255, 255); 
     }
-    background-color: rgba(0, 0, 0, 1.0);
+    background-color: $black;
   }  
+}
+#opener {
+  height: 100%;
+  display: block;
+}
+#me {
+  height: 100%;
+  display: block;
+  background-color: $black;  
+  color: white;
+  h2 {
+    text-align: center;
+    line-height: 30px;
+    padding: 50px 0 20px;
+    font-size: 30px;
+  }
+  p {
+    width: 40%;
+    margin: auto;
+    line-height: 35px;
+    font-size: 20px;
+    text-align: center;
+  }
 }
