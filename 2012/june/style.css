@@ -1,0 +1,11 @@
+body {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  background-color: rgba(103,80,97,1.0);
+  color: white;
+  font-family: sans-serif;
+}
+h1, h2 {
+  font-family: serif;
+}
