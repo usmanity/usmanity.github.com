@@ -1,99 +1,39 @@
-$black: #383838;
 body {
   margin: 0;
   padding: 0;
-  width: 100%;
-  background: rgba(255, 255, 255, 1.0);
-  font: {
-    size: 16px;
-    family: sans-serif;
-  }
 }
-h1 {
-  text-align: center;
-  margin: 200px 0 180px;
-  font: {
-    family: helvetica, 'droid sans', sans-serif;
-    weight: 100;
-    size: 3em;
-  }
-
-}
-ul {
-  padding: 0;
+ol {
   margin: 0;
+  padding: 0;
   list-style: none;
-  font: {
-    size: 20px;
-  }
   li {
-    font: {
-      size: 15px;
+    height: 25%;
+    font-family: "helvetica neue", sans-serif;
+    font-size: 4em;
+    span {
+      margin-top: 1em;
+      position: absolute;
+      text-align: center;
+      width: 100%;
     }
+  }
+  a {
+    color: #FFFFFF;
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: underline;
   }
 }
-
-.main {
-  width: 430px;
-  margin: 215px auto 0;
-  li {
-    transition: background-color 0.2s ease;
-    text-align: center;
-    border: 1px solid $black;
-    border-radius: 1px;
-    width: 180px;
-    font: {
-      size: 36px;
-      weight: 100;
-    }
-    a {
-      display: inline-block;
-      padding: 10px 2px;
-      width: 180px;
-      text-decoration: none;
-      color: $black;
-    }
-    &:first-child {
-      float: left;
-    }
-    &:last-child {
-      float: right;
-    }
-  }
-  li:hover {
-    a { 
-      color: rgb(255, 255, 255); 
-    }
-    background-color: $black;
-  }  
+.navy {
+  background-color: #001F3F;
 }
-#opener {
-  height: 100%;
-  display: block;
+.blue {
+  background-color: #0074D9;
 }
-#me {
-  height: 100%;
-  display: block;
-  background-color: $black;  
-  color: white;
-  h2 {
-    text-align: center;
-    line-height: 30px;
-    padding: 50px 0 20px;
-    font-size: 30px;
-  }
-  p {
-    width: 40%;
-    margin: auto;
-    line-height: 35px;
-    font-size: 20px;
-    text-align: center;
-  }
+.aqua {
+  background-color: #7FDBFF;
 }
-a {
-  color: rgba(255,255,255, 0.7);  
-  text-decoration: none;
-  &:hover {
-    color: rgba(255,255,255, 1);  
-  }
+.teal {
+  background-color: #39CCCC;
 }
