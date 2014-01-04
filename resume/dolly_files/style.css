@@ -1,0 +1,53 @@
+html, body, h1 {
+  background-color: #2C5A83;
+  height: 100%;
+  text-align: center;
+  color: rgba(250, 248, 255, 0.45);
+  font-family: baskerville;
+  font-weight: 100;
+  font-size: 2em;
+}
+#landing {
+  color: rgba(250, 248, 255, 0.45);
+  padding: 10% 0 0;
+}
+#footer {
+  font-size: 0.3em;
+  position: absolute;
+  bottom: 1em;
+  text-align: center;
+  width: 100%;
+}
+#footer a {
+  color: rgba(250, 248, 255, 0.15);
+}
+#footer a:hover {
+  color: rgba(250, 248, 255, 0.45);
+}
+textarea {
+    display: block;
+    font-size: 30px;
+    font-family: baskerville;
+    border: 0;
+    resize: none; 
+    height: 100%;
+    width: 100%;
+    background: #fafafa;
+}
+textarea:focus {
+    outline-width: 0;
+}
+#typing, #typing .row, #main, .column {
+  height: 100%;
+}
+#main {
+  min-height: 200px;
+  box-shadow: 0 0 0;
+  -webkit-writing-mode: none;
+  padding-top: 2em;
+}
+#typing {
+  background: #fafafa;
+}
+#typing .row {
+}
