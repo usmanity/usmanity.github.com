@@ -28,3 +28,21 @@ footer {
 	font-size: 1em;
 	margin: 20px 0;
 }
+
+@media only screen and (max-width : 767px) {
+	body {
+		font-size: 10px;
+		margin-top: 1em;
+		width: 90%;
+	}
+	a {
+
+	}
+	header {
+		font-size: 1.4em;
+	}
+	section {
+		font-size: 1.2em;
+		padding: 10px 10px 0;
+	}
+}
