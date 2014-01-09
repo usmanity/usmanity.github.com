@@ -1,0 +1,30 @@
+body {
+	width: 80%;
+	margin: auto;
+	margin-top: 40px;
+	font-family: sans-serif;
+	color: #111;
+	font-size: 10px;
+}
+a {
+	color: #0074D9;
+	text-decoration: none;
+	line-height: 1.4em;
+}
+a:hover {
+	border-bottom: 1px solid #7FDBFF;
+}
+header {
+	font-size: 2.2em;
+	line-height: 2.5em;
+}
+section {
+	margin: 20px 0;
+	border: 1px solid rgba(180, 180, 180, 0.2);
+	padding: 20px;
+	font-size: 1.4em;
+}
+footer {
+	font-size: 1em;
+	margin: 20px 0;
+}
