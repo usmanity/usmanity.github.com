@@ -22,16 +22,20 @@ ol {
     text-decoration: underline; }
 
 .about {
-  background-color: #C4BDA6; }
+  background-color: #cfc8b6;
+  color: #63868c; }
 
 .projects {
-  background-color: #50737A; }
+  background-color: #63868c;
+  color: #f9f3e4; }
 
 .blog {
-  background-color: #F8F1DD; }
+  background-color: #f9f3e4;
+  color: #d58b7f; }
 
 .photography {
-  background-color: #CC766A; }
+  background-color: #d58b7f;
+  color: #f9f3e4; }
 
 @media only screen and (max-width: 767px) {
   body ol li {
