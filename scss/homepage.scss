@@ -25,17 +25,22 @@ ol {
     text-decoration: underline;
   }
 }
+
 .about {
-  background-color: #C4BDA6; 
+  background-color: rgba(207, 200, 182, 1.0);
+  color: rgba(99, 134, 140, 1.0);
 }
 .projects {
-  background-color: #50737A;
+  background-color: rgba(99, 134, 140, 1.0);
+  color: rgba(249, 243, 228, 1.0);
 }
 .blog {
-  background-color: #F8F1DD;
+  background-color: rgba(249, 243, 228, 1.0);
+  color: rgba(213, 139, 127, 1.0);
 }
 .photography {
-  background-color: #CC766A;
+  background-color: rgba(213, 139, 127, 1.0);
+  color: rgba(249, 243, 228, 1.0);
 }
 
 // mobile
