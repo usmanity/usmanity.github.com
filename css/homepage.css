@@ -9,7 +9,8 @@ ol {
   ol li {
     height: 25%;
     font-family: "helvetica neue", sans-serif;
-    font-size: 4em; }
+    font-size: 4em;
+    font-weight: 200; }
     ol li span {
       margin-top: 1em;
       position: absolute;
