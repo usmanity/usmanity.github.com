@@ -8,11 +8,12 @@ Over the years, I have learned a tremendous amount of things from human created 
 -------------------------------------
 To list a few as a thank you to each:
 
+People:
+  - Kristen Ojeda, @kristenojeda
+  - Mohnish T., @mohnish
+  - Noah S., noah.org
+
 Ideas:
   - Wikipedia
   - github.com
   - vim & emacs
-
-People:
-  - Kristen Ojeda, @kristenojeda
-  - Mohnish T., @mohnish
