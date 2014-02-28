@@ -1,0 +1,20 @@
+humans.txt
+==========
+
+this website and its content are mostly created by me, Muhammad Usman.
+
+Over the years, I have learned a tremendous amount of things from people and their ideas.
+
+-------------------------------------
+
+To list a few as a thank you to each:
+
+People:
+  - Kristen Ojeda, @kristenojeda
+  - Mohnish T., @mohnish
+  - Noah S., noah.org
+
+Ideas:
+  - Wikipedia
+  - github.com
+  - vim & emacs
