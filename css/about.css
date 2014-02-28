@@ -19,21 +19,19 @@ a {
   height: 100%;
   width: 100%; }
 
-#content, header, nav {
+#content, nav {
   font-family: 'Avenir', sans-serif; }
 
 #content {
   width: 80%;
   margin: auto;
   padding-top: 50px; }
-
-header {
-  width: 100%; }
-
-#lion {
-  float: left;
-  font-size: 40px; }
+  #content #intro {
+    margin-top: 450px;
+    font-size: 48px; }
 
 nav {
   float: right;
   font-size: 30px; }
+  nav a {
+    padding-right: 30px; }
