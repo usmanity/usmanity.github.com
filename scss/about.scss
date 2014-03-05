@@ -49,7 +49,10 @@ nav {
 
 @media only screen and (max-device-width: 320px) {
   #background { display: none; }
-  #mobile { display: block; }
+  #mobile { 
+    display: block; 
+    background-color: #53BF9B;
+  }
   body {
     margin: 0;
     padding: 0;
