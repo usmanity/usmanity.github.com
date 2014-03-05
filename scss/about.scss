@@ -45,9 +45,11 @@ nav {
     padding-right: 30px;
   }
 }
+#mobile { display: none; }
 
 @media only screen and (max-device-width: 320px) {
   #background { display: none; }
+  #mobile { display: block; }
   body {
     margin: 0;
     padding: 0;
