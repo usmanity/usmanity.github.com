@@ -1,3 +1,4 @@
+@import 'fonts';
 body {
   margin: 0;
   padding: 0;
@@ -21,7 +22,7 @@ a {
 }
 #content, nav {
   font: {
-    family: 'Avenir', sans-serif;
+    family: 'clear sans thin','Avenir', sans-serif;
   } 
 }
 #content {
@@ -31,14 +32,14 @@ a {
   #intro {
     margin-top: 450px;
     font-size: 48px;
-    color: transparent;
-    border: 1px solid white;
+    color: #fff;
     background-image: url("http://mhmd.us/ffKe+") 100% 100%;
   }
 }
 nav {
   float: right;
   font-size: 30px;
+  font-family: 'clear sans', sans-serif;
   a {
     padding-right: 30px;
   }
