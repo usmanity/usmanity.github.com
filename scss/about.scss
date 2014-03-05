@@ -8,11 +8,12 @@ a {
   text-decoration: none;
   color: white;
 }
-#background {
-  background: url("http://mhmd.us/ffKe+");
-  background-size: 100% 100%;
-  height: 100%;
-  width: 100%;
+html {
+  background: url("http://mhmd.us/ffKe+") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 #main {
   background-color: rgba(146, 165, 198, 0.58);
