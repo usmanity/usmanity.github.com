@@ -8,12 +8,12 @@ ol {
   padding: 0;
   list-style: none;
   li {
-    height: 25%;
+    height: 33.33%;
     font-family: "clear sans", "helvetica neue", sans-serif;
     font-size: 4em;
     font-weight: 200;
     span {
-      margin-top: 1em;
+      margin-top: 1.2em;
       position: absolute;
       text-align: center;
       width: 100%;
@@ -28,21 +28,14 @@ ol {
   }
 }
 
-.about {
-  background-color: rgba(207, 200, 182, 1.0);
-  color: rgba(99, 134, 140, 1.0);
-}
 .projects {
-  background-color: rgba(99, 134, 140, 1.0);
-  color: rgba(249, 243, 228, 1.0);
+  background-color: #40F4DE;
 }
 .blog {
-  background-color: rgba(249, 243, 228, 1.0);
-  color: rgba(213, 139, 127, 1.0);
+  background-color: #FF9598;
 }
 .photography {
-  background-color: rgba(213, 139, 127, 1.0);
-  color: rgba(249, 243, 228, 1.0);
+  background-color: #DE81F2;
 }
 
 // mobile

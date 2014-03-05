@@ -28,12 +28,12 @@ ol {
   padding: 0;
   list-style: none; }
   ol li {
-    height: 25%;
+    height: 33.33%;
     font-family: "clear sans", "helvetica neue", sans-serif;
     font-size: 4em;
     font-weight: 200; }
     ol li span {
-      margin-top: 1em;
+      margin-top: 1.2em;
       position: absolute;
       text-align: center;
       width: 100%; }
@@ -43,21 +43,14 @@ ol {
   ol a:hover {
     text-decoration: underline; }
 
-.about {
-  background-color: #cfc8b6;
-  color: #63868c; }
-
 .projects {
-  background-color: #63868c;
-  color: #f9f3e4; }
+  background-color: #40F4DE; }
 
 .blog {
-  background-color: #f9f3e4;
-  color: #d58b7f; }
+  background-color: #FF9598; }
 
 .photography {
-  background-color: #d58b7f;
-  color: #f9f3e4; }
+  background-color: #DE81F2; }
 
 @media only screen and (max-width: 767px) {
   body ol li {
