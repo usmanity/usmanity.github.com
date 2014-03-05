@@ -19,3 +19,16 @@ html { background: url("http://mhmd.us/ffKe+") no-repeat center center fixed; -w
 
 nav { float: right; font-size: 30px; font-family: 'clear sans', sans-serif; }
 nav a { padding-right: 30px; }
+
+@media only screen and (max-device-width: 320px) { #background { display: none; }
+  body { margin: 0; padding: 0; }
+  ol { margin: 0; padding: 0; list-style: none; }
+  ol li { height: 33.33%; font-family: "clear sans", "helvetica neue", sans-serif; font-size: 4em; font-weight: 200; }
+  ol li span { margin-top: 1.2em; position: absolute; text-align: center; width: 100%; }
+  ol a { color: #FFFFFF; text-decoration: none; }
+  ol a:hover { text-decoration: underline; }
+  .projects { background-color: #53BF9B; }
+  .blog { background-color: #F4DB9B; }
+  .photography { background-color: #DE81F2; } }
+@media only screen and (max-device-width: 320px) and (max-width: 767px) { body ol li { font-size: 3em; }
+  body ol li span { margin-top: 0.7em; } }
