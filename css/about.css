@@ -28,7 +28,10 @@ a {
   padding-top: 50px; }
   #content #intro {
     margin-top: 450px;
-    font-size: 48px; }
+    font-size: 48px;
+    color: transparent;
+    border: 1px solid white;
+    background-image: url("http://mhmd.us/ffKe+") 100% 100%; }
 
 nav {
   float: right;
