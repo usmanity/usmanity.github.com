@@ -1,3 +1,9 @@
+@font-face { font-family: 'clear sans bold'; src: url("fonts/ClearSans-Bold-webfont.eot"); src: url("fonts/ClearSans-Bold-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/ClearSans-Bold-webfont.woff") format("woff"), url("fonts/ClearSans-Bold-webfont.ttf") format("truetype"), url("fonts/ClearSans-Bold-webfont.svg#clear_sansbold") format("svg"); font-weight: normal; font-style: normal; }
+
+@font-face { font-family: 'clear sans thin'; src: url("fonts/ClearSans-Thin-webfont.eot"); src: url("fonts/ClearSans-Thin-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/ClearSans-Thin-webfont.woff") format("woff"), url("fonts/ClearSans-Thin-webfont.ttf") format("truetype"), url("fonts/ClearSans-Thin-webfont.svg#clear_sans_thinregular") format("svg"); font-weight: normal; font-style: normal; }
+
+@font-face { font-family: 'clear sans'; src: url("fonts/ClearSans-Regular-webfont.eot"); src: url("fonts/ClearSans-Regular-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/ClearSans-Regular-webfont.woff") format("woff"), url("fonts/ClearSans-Regular-webfont.ttf") format("truetype"), url("fonts/ClearSans-Regular-webfont.svg#clear_sans_Regularregular") format("svg"); font-weight: normal; font-style: normal; }
+
 body { margin: 0; padding: 0; font-family: sans-serif; color: white; }
 
 a { text-decoration: none; color: white; }
@@ -6,10 +12,10 @@ html { background: url("http://mhmd.us/ffKe+") no-repeat center center fixed; -w
 
 #main { background-color: rgba(146, 165, 198, 0.58); height: 100%; width: 100%; }
 
-#content, nav { font-family: 'Avenir', sans-serif; }
+#content, nav { font-family: 'clear sans thin','Avenir', sans-serif; }
 
 #content { width: 80%; margin: auto; padding-top: 50px; }
-#content #intro { margin-top: 450px; font-size: 48px; }
+#content #intro { margin-top: 450px; font-size: 48px; color: #fff; background-image: url("http://mhmd.us/ffKe+") 100% 100%; }
 
-nav { float: right; font-size: 30px; }
+nav { float: right; font-size: 30px; font-family: 'clear sans', sans-serif; }
 nav a { padding-right: 30px; }
