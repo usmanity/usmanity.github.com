@@ -10,28 +10,28 @@ a {
   color: white;
 }
 html {
-  background: url("http://mhmd.us/gEgD+") no-repeat center center fixed;
+  background: url("http://mhmd.us/16FgD+") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
 }
 #main {
-  background-color: rgba(146, 165, 198, 0.58);
+  background-color: rgba(140, 136, 111, 0.4);
   height: 100%;
   width: 100%;
 }
 #content, nav {
   font: {
     family: 'clear sans thin','Avenir', sans-serif;
-  } 
+  }
 }
 #content {
   width: 80%;
   margin: auto;
   padding-top: 50px;
   #intro {
-    margin-top: 450px;
+    margin-top: 250px;
     font-size: 48px;
     color: #fff;
     background-image: url("http://mhmd.us/gEgD+") 100% 100%;
@@ -49,8 +49,8 @@ nav {
 
 @media only screen and (max-device-width: 480px) {
   #background { display: none; }
-  #mobile { 
-    display: block; 
+  #mobile {
+    display: block;
     background-color: #53BF9B;
   }
   body {
