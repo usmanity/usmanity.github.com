@@ -1,23 +1,24 @@
 @import 'fonts';
+$text-color: #2A2625;
+$bg-color: #F7EAD9;
 body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
-  color: white;
+  color: $text-color;
 }
 a {
   text-decoration: none;
-  color: white;
+  color: $text-color;
 }
 html {
-  background: #FF7518;
+  background: $bg-color;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
 }
 #main {
-
   height: 100%;
   width: 100%;
 }
@@ -33,7 +34,7 @@ html {
   #intro {
     margin-top: 230px;
     font-size: 48px;
-    color: #fff;
+    color: $text-color;
     background-image: url("http://mhmd.us/gEgD+") 100% 100%;
   }
 }
@@ -51,7 +52,7 @@ nav {
   #background { display: none; }
   #mobile {
     display: block;
-    background-color: #53BF9B;
+    background-color: $bg-color;
   }
   body {
     margin: 0;
@@ -74,7 +75,7 @@ nav {
       }
     }
     a {
-      color: #FFFFFF;
+      color: $text-color;
       text-decoration: none;
     }
     a:hover {

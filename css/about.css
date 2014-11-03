@@ -20,14 +20,14 @@ body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
-  color: white; }
+  color: #2a2625; }
 
 a {
   text-decoration: none;
-  color: white; }
+  color: #2a2625; }
 
 html {
-  background: #FF7518;
+  background: #f7ead9;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -47,7 +47,7 @@ html {
   #content #intro {
     margin-top: 230px;
     font-size: 48px;
-    color: #fff;
+    color: #2a2625;
     background-image: url("http://mhmd.us/gEgD+") 100% 100%; }
 
 nav {
@@ -66,7 +66,7 @@ nav {
 
   #mobile {
     display: block;
-    background-color: #53BF9B; }
+    background-color: #f7ead9; }
 
   body {
     margin: 0;
@@ -87,7 +87,7 @@ nav {
         text-align: center;
         width: 100%; }
     ol a {
-      color: #FFFFFF;
+      color: #2a2625;
       text-decoration: none; }
     ol a:hover {
       text-decoration: underline; }
