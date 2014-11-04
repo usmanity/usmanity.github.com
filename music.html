@@ -35,6 +35,13 @@
     margin-top: 10%;
     line-height: 50px;
   }
+  .now-playing {
+    font-size: 16px;
+    font-family: 'clear sans thin','Avenir', sans-serif;
+    text-align: center;
+    margin-top: 1%;
+    line-height: 20px;
+  }
   .type {
     clear: both;
     font-size: 35px;
@@ -76,8 +83,11 @@
 
 <div class="app" id="lastfm" data-url="http://ws.audioscrobbler.com/2.0/?method=user.getinfo&user=usman6&api_key=641ea11bb6f5ba6f6013588f4a4dc927&format=json">
 </div>
+<div class="app now-playing" id="nowPlaying" data-url="http://ws.audioscrobbler.com/2.0/?method=user.getRecentTracks&user=usman6&api_key=641ea11bb6f5ba6f6013588f4a4dc927&format=json&limit=1">
+</div>
 
-<script src="/js/count.js" type="text/javascript" charset="utf-8" async defer></script>
+
+<script src="/js/lastfm.js" type="text/javascript" charset="utf-8" async defer></script>
 <script src="/js/analytics.js" type="text/javascript" charset="utf-8" async defer></script>
 </body>
 </html>

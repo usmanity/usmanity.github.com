@@ -7,10 +7,12 @@ usm = {
 		    url: url,
 		    success: function(data){
 	    	  switch (id) {
-	    	  	case "#flickr":
-				      count = data.person.photos.count["_content"];
-				      $(id)[0].innerHTML = count + '<span class="type"> photos</span>';
-				      break;
+	    	  	case "#nowPlaying":
+				      if (data.recenttracks.track[0]['@attr']) {
+                song = data.recenttracks.track[0].name + " by " + data.recenttracks.track[0].artist['#text'];
+                $(id)[0].innerHTML = "Now listening to " + song;
+              }
+							break;
 				    case "#lastfm":
 					    count = data.user.playcount;
 					    $(id)[0].innerHTML = count + '<span class="type"> songs scrobbled</span>';
