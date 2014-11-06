@@ -103,8 +103,3 @@ nav {
 
   .photography {
     background-color: #DE81F2; } }
-@media only screen and (max-device-width: 480px) and (max-width: 767px) {
-  body ol li {
-    font-size: 3em; }
-    body ol li span {
-      margin-top: 0.7em; } }

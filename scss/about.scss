@@ -96,13 +96,4 @@ nav {
     background-color: #DE81F2;
   }
 
-  // mobile
-  @media only screen and (max-width : 767px) {
-    body ol li {
-      font-size: 3em;
-      span {
-        margin-top: 0.7em;
-      }
-    }
-  }
 }
