@@ -9,7 +9,9 @@ usm = {
 	    	  switch (id) {
 	    	  	case "#nowPlaying":
 				      if (data.recenttracks.track[0]['@attr']) {
-                song = data.recenttracks.track[0].name + " by " + data.recenttracks.track[0].artist['#text'];
+                song = data.recenttracks.track[0].name + " by " +
+											"<a href='https://www.google.com/search?btnI=I%27m+Feeling+Lucky&q=" +
+											data.recenttracks.track[0].artist['#text'] + "'>" + data.recenttracks.track[0].artist['#text'];
                 $(id)[0].innerHTML = "Now listening to " + song;
               }
 							break;
