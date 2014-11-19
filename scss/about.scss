@@ -1,6 +1,10 @@
 @import 'fonts';
+
+// trying to avoid using many colors
+// these are base colors, will have varying opacity throughout this file
 $text-color: #2A2625;
 $bg-color: #F7EAD9;
+
 body {
   margin: 0;
   padding: 0;
