@@ -3,7 +3,7 @@ humans.txt
 
 This website and its contents are mostly created by me, Muhammad Usman.
 
-Over the years, I have learned a tremendous amount of things from people and ideas listed below.
+Over time, I have learned a tremendous amount of things from people and ideas listed below.
 
 -------------------------------------
 
@@ -14,9 +14,9 @@ People:
   - Mohnish T., @mohnish
   - Noah S., noah.org
 
-Ideas:
+Ideas & Projects:
   - Wikipedia
   - git & github.com
   - vim & emacs
   - jQuery
-
+  - Angular.js
