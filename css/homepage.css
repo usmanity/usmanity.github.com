@@ -9,11 +9,7 @@ body {
   background-color: white;
   color: #090909;
   font-family: 'Helvetica Neue', Helvetica, Roboto, sans-serif;
-}
-#main {
-  width: 80%;
-  height: 100%;
-  margin: 50px auto auto;
+  margin-top: 50px;
 }
 #hello {
   font-size: 48px;
@@ -25,4 +21,52 @@ body {
   font-size: 20px;
   font-weight: 200;
   letter-spacing: 0.2px;
+}
+#triangle-face {
+  width: 98px;
+  height: 136px;
+  background-image: url('/images/triangle-face.svg');
+  background-size: 96px;
+  background-repeat: no-repeat;
+  margin-top: 4px;
+}
+#intro {
+  float: left;
+  width: 50%;
+  margin: auto;
+  padding-left: 10%;
+}
+a {
+  text-decoration: none;
+  line-height: 20px;
+}
+a:hover {
+  color: #0862C7;
+}
+#photography-heading {
+  width: 100%;
+  float: left;
+  text-align: center;
+  margin: 120px auto 30px;
+}
+#heading-text {
+  text-transform: uppercase;
+  font-weight: 200;
+  letter-spacing: 3px;
+  border: 1px solid currentColor;
+  width: 270px;
+  margin: auto;
+  padding: 10px;
+  font-size: 24px;
+}
+
+ul li {
+  list-style: none;
+  margin: auto auto 40px;
+}
+ul li img {
+  width: 80%;
+  margin: auto;
+  display: block;
+  border-radius: 3px;
 }
