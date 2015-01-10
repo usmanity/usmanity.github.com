@@ -54,15 +54,15 @@ a:hover {
   font-weight: 200;
   letter-spacing: 3px;
   border: 1px solid currentColor;
-  width: 270px;
+  width: 240px;
   margin: auto;
   padding: 10px;
-  font-size: 24px;
+  font-size: 20px;
 }
 
 ul li {
   list-style: none;
-  margin: auto auto 40px;
+  margin: auto auto 80px;
 }
 ul li img {
   width: 80%;
