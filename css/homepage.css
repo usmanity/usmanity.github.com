@@ -62,11 +62,15 @@ a:hover {
   letter-spacing: 3px;
   color: currentColor;
   border: 1px solid rgba(0, 0, 0, 0.2);;
+  border-radius: 2px;
   width: 240px;
   max-width: 80%;
   margin: auto;
   padding: 10px;
   font-size: 20px;
+}
+#heading-text a, #heading-text a:hover {
+  color: currentColor;
 }
 
 ul li {
@@ -83,12 +87,13 @@ ul li img {
   float: right;
   padding-right: 10%;
   width: 20%;
+  text-align: right;
 }
 #links a li {
-  float: left;
+  float: right;
   width: 100px;
   text-align: center;
-  border-radius: 25px;
+  border-radius: 3px;
   margin: 10px;
   padding: 6px;
   border: 1px solid #F4F5F7;
