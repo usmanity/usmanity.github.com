@@ -2,6 +2,13 @@
   <head>
     <title>test page</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style media="screen">
+      body {
+        font-weight: 100;
+        font-family: 'helvetica neue', sans-serif;
+        font-size: 36px;
+      }
+    </style>
   </head>
   <body>
     This page is for testing.
@@ -10,10 +17,12 @@
     var user = localStorage.getItem('user');
     if (user){
       outbound.identify(user);
+      outbound.track('test page view');
     } else {
       var user = Math.floor(Math.random() * 123456);
       localStorage.setItem('user', user);
       outbound.identify(user);
+      outbound.track('test page view');
     }
     </script>
   </body>
