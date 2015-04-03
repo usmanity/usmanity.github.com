@@ -15,8 +15,12 @@ body {
   height: 100%;
   background-color: #fff;
   font-family: Roboto, 'Helvetica Neue', Helvetica, sans-serif;
-  margin-top: 50px;
   color: #353535;
+}
+#main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 #hello {
   font-size: 48px;
@@ -37,9 +41,16 @@ body {
   background-repeat: no-repeat;
   margin-top: 4px;
 }
+.top {
+  align-self: flex-start;
+}
+.bottom {
+  align-self: flex-end;
+}
 #intro {
   width: 180px;
   margin: auto;
+  max-width: 50%;
 }
 a {
   text-decoration: none;
