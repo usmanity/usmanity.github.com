@@ -17,12 +17,12 @@
     var user = localStorage.getItem('user');
     if (user){
       outbound.identify(user);
-      outbound.track('test page view');
+      outbound.track('uno');
     } else {
       var user = Math.random();
       localStorage.setItem('user', user);
       outbound.identify(user);
-      outbound.track('test page view');
+      outbound.track('uno');
     }
     </script>
   </body>

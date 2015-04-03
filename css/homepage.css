@@ -38,9 +38,8 @@ body {
   margin-top: 4px;
 }
 #intro {
-  width: 50%;
+  width: 180px;
   margin: auto;
-  padding-left: 10%;
 }
 a {
   text-decoration: none;
