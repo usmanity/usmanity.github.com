@@ -19,7 +19,7 @@
       outbound.identify(user);
       outbound.track('test page view');
     } else {
-      var user = Math.floor(Math.random());
+      var user = Math.random();
       localStorage.setItem('user', user);
       outbound.identify(user);
       outbound.track('test page view');
