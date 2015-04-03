@@ -1,68 +1,51 @@
-<!DOCTYPE html>
 <html>
-<head>
-  <title>Muhammad Usman</title>
-  <meta name="viewport" content="initial-scale = 1.0"/>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-  <link href='http://fonts.googleapis.com/css?family=Roboto:500,300,700,400' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" href="/css/homepage.css" media="screen" title="main" charset="utf-8">
-  <link rel="shortcut icon" type="image/png" href="/images/triangle-face.png"/>
-</head>
-<body>
-<div id="main">
-  <div class="top">
+  <head>
+    <title>test page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="initial-scale = 1.0"/>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <link href='http://fonts.googleapis.com/css?family=Roboto:500,300,700,400' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/css/homepage.css" media="screen" title="main" charset="utf-8">
+    <link rel="shortcut icon" type="image/png" href="/images/triangle-face.png"/>
+  </head>
+  <body>
 
+    <div class="container">
+      <div class="main">
+        <div id="intro">
+  <div id="hello">
+    Hello.
   </div>
-  <div id="intro">
-    <div id="hello">
-      Hello.
+  <div id="subtitle">
+    <p>
+      I'm Muhammad Usman.
+    </p>
+    <p>
+      I live in San Francisco.
+    </p>
+    <p>
+      Web dev at <a href="http://outbound.io">Outbound.io</a>.
+    </p>
+    <p>
+      Check out my <a href="http://blog.usmanity.com">blog</a>.
+    </p>
+  </div>
+      </div>
     </div>
-    <div id="subtitle">
-      <p>
-        I'm Muhammad Usman.
-      </p>
-      <p>
-        I live in San Francisco.
-      </p>
-      <p>
-        Web dev at <a href="http://outbound.io">Outbound.io</a>.
-      </p>
-      <p>
-        Check out my <a href="http://blog.usmanity.com">blog</a>.
-      </p>
-    </div>
-  </div>
 
-  <div id="links" style="display:none;">
-    <ul>
-      <a href="/resume">
-        <li>Resume</li>
-      </a>
-      <a href="/projects">
-        <li>Projects</li>
-      </a>
-    </ul>
-  </div>
-  <div class="bottom">
-
-  </div>
-</div>
-
-<script charset="utf-8" src="/js/analytics.js"></script>
-<script type="text/javascript"> window.outbound=window.outbound||[];window.outbound.methods=["identify","track","registerApnsToken","registerGcmToken","disableApnsToken","disableGcmToken"];window.outbound.factory=function(t){return function(){var o=Array.prototype.slice.call(arguments);o.unshift(t);window.outbound.push(o);return window.outbound}};for(var i=0;i<window.outbound.methods.length;i++){var key=window.outbound.methods[i];window.outbound[key]=window.outbound.factory(key)}if(!document.getElementById("outbound-js")){var script=document.createElement("script");script.type="text/javascript";script.id="outbound-js";script.async=true;script.src="//cdn.outbound.io/pub-7d8f3bb0e6613fd9bce6646bae622a6f.js";var first=document.getElementsByTagName("script")[0];first.parentNode.insertBefore(script,first)} </script>
-<script charset="utf-8">
-
-var user = localStorage.getItem('user');
-if (user){
-  outbound.identify(user);
-} else {
-  var user = Math.random();
-  localStorage.setItem('user', user);
-  outbound.identify(user);
-}
-
-</script>
-
-</body>
+    <script type="text/javascript"> window.outbound=window.outbound||[];window.outbound.methods=["identify","track","registerApnsToken","registerGcmToken","disableApnsToken","disableGcmToken"];window.outbound.factory=function(t){return function(){var o=Array.prototype.slice.call(arguments);o.unshift(t);window.outbound.push(o);return window.outbound}};for(var i=0;i<window.outbound.methods.length;i++){var key=window.outbound.methods[i];window.outbound[key]=window.outbound.factory(key)}if(!document.getElementById("outbound-js")){var script=document.createElement("script");script.type="text/javascript";script.id="outbound-js";script.async=true;script.src="//cdn.stage.outbound.io/pub-433453c0e8a2a3f6002eadd0cdb70821.js";var first=document.getElementsByTagName("script")[0];first.parentNode.insertBefore(script,first)} </script>
+    <script charset="utf-8">
+    var user = localStorage.getItem('user');
+    if (user){
+      outbound.identify(user);
+      outbound.track('uno');
+    } else {
+      var user = Math.random();
+      localStorage.setItem('user', user);
+      outbound.identify(user);
+      outbound.track('uno');
+    }
+    </script>
+  </body>
 </html>
