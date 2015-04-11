@@ -14,6 +14,7 @@ usm = {
 	    	  	case "#nowPlaying":
 				      if (data.recenttracks.track[0]['@attr']) {
 								track = data.recenttracks.track[0].name + " " + data.recenttracks.track[0].artist['#text'];
+								songName = track = data.recenttracks.track[0].name;
                 song = '"' + data.recenttracks.track[0].name + '" by ' +
 											"<a href='http://www.amazon.com/gp/search?ie=UTF8&camp=1789&creative=9325&index=music&linkCode=ur2&tag=usmanitycom0f-20&linkId=EB2WTXJOXLNBYR26&keywords=" +
 											data.recenttracks.track[0].artist['#text'] + "'>" + data.recenttracks.track[0].artist['#text'];
@@ -28,7 +29,8 @@ usm = {
 										console.log(trackId);
 										$(".links").append(spotify);
 								});
-								$(id).append('<div class="links"></div>');
+								// $(id).append('<div class="links"></div>');
+								usm.showRank();
               }
 							break;
 				    case "#lastfm":
@@ -50,6 +52,34 @@ usm = {
 			usm.count(url, id);
 		}
 		$(".spinner").hide();
+	},
+	showRank: function(){
+		var top500, rank;
+		var el = $(".now-playing");
+
+		$.ajax({
+		  url:"https://www.kimonolabs.com/api/c06r53dy?apikey=Nh7rKXZcHCVAiEVYvYN8Y0Ba1uBtLgB3",
+		  crossDomain: true,
+		  dataType: "jsonp",
+		  success: function (response) {
+		    top500 = response;
+				_.each(top500.results.collection1, function(song){
+					if (song.track.text.toLowerCase() === songName.toLowerCase()){
+						rank = song.rank;
+					}
+				});
+
+				if (rank){
+					console.log("This song is #" + rank + " out of my top 500.");
+					el.append("<div>This song is #" + rank + " out of my top 500.</div>");
+				}
+		  },
+		  error: function (xhr, status) {
+		    console.log("error found" + status);
+		  }
+		});
+
+
 	}
 }
 $(document).ready(usm.init);
