@@ -83,4 +83,4 @@ usm = {
 	}
 }
 $(document).ready(usm.init);
-setInterval(usm.init, 100000);
+setInterval(usm.init, 10000);
