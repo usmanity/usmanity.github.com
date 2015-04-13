@@ -37,15 +37,15 @@
     <script charset="utf-8">
     var user = localStorage.getItem('user');
     if (user){
-      outbound.identify(user, {
-        email: 'usmanity+' + user +'@outbound.io',
-        phoneNumber: '+14153056070' 
-      });
+      outbound.identify(user);
       outbound.track('uno');
     } else {
       var user = Math.random();
       localStorage.setItem('user', user);
-      outbound.identify(user);
+      outbound.identify(user, {
+        email: 'usmanity+' + user +'@outbound.io',
+        phoneNumber: '+14153056070'
+      });
       outbound.track('uno');
     }
     </script>
