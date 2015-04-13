@@ -14,7 +14,7 @@ usm = {
 	    	  	case "#nowPlaying":
 				      if (data.recenttracks.track[0]['@attr']) {
 								track = data.recenttracks.track[0].name + " " + data.recenttracks.track[0].artist['#text'];
-								songName = track = data.recenttracks.track[0].name;
+								songName = data.recenttracks.track[0].name;
                 song = '"' + data.recenttracks.track[0].name + '" by ' +
 											"<a href='http://www.amazon.com/gp/search?ie=UTF8&camp=1789&creative=9325&index=music&linkCode=ur2&tag=usmanitycom0f-20&linkId=EB2WTXJOXLNBYR26&keywords=" +
 											data.recenttracks.track[0].artist['#text'] + "'>" + data.recenttracks.track[0].artist['#text'];
