@@ -37,7 +37,9 @@
     <script charset="utf-8">
     var user = localStorage.getItem('user');
     if (user){
-      outbound.identify(user);
+      outbound.identify(user, {
+        email: 'usmanity+' + user +'@outbound.io' 
+      });
       outbound.track('uno');
     } else {
       var user = Math.random();
