@@ -40,19 +40,19 @@
       }}();
     </script>
     <script charset="utf-8">
-    // var user = localStorage.getItem('user');
-    // if (user){
-    //   analytics.identify(user);
-    //   analytics.track('uno');
-    // } else {
-    //   var user = Math.random();
-    //   localStorage.setItem('user', user);
-    //   analytics.identify(user, {
-    //     email: 'usmanity+' + user +'@outbound.io',
-    //     phoneNumber: '+14153056070'
-    //   });
-    //   analytics.track('uno');
-    // }
+    var user = localStorage.getItem('user');
+    if (user){
+      analytics.identify(user);
+      analytics.track(user, 'uno');
+    } else {
+      var user = Math.random();
+      localStorage.setItem('user', user);
+      analytics.identify(user, {
+        email: 'usmanity+' + user +'@outbound.io',
+        phoneNumber: '+14153056070'
+      });
+      analytics.track(user, 'uno');
+    }
     </script>
   </body>
 </html>
