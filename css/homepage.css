@@ -16,6 +16,7 @@ body {
   background-color: #fff;
   font-family: Roboto, 'Helvetica Neue', Helvetica, sans-serif;
   color: #353535;
+  min-width: 500px;
 }
 #hello {
   font-size: 48px;
@@ -42,4 +43,35 @@ body {
 .main {
   width: 180px;
   margin: auto;
+}
+section {
+  width: 100%;
+  text-align: center;
+  height: 100%;
+  border: 1px solid rgba(169, 186, 187, 1);
+  box-sizing: border-box;
+}
+.section-heading {
+  font-size: 20px;
+  margin-bottom: 20px;
+  padding-top: 50px;
+}
+ul li {
+  list-style: none;
+}
+.work li {
+  width: 30%;
+  float: left;
+  margin: 0 1.5%;
+  height: 400px;
+  margin-top: 15vh;
+  border: 1px solid #ccc;
+}
+.projects li {
+  width: 40%;
+  margin: 0 4.9%;
+  float: left;
+  height: 500px;
+  margin-top: 10vh;
+  border: 1px solid red;
 }
