@@ -39,7 +39,7 @@
     var user = localStorage.getItem('user');
     if (user){
       outbound.identify(user);
-      outbound.track(user, 'homepage view');
+      outbound.track('homepage view');
     } else {
       var user = Math.random();
       localStorage.setItem('user', user);
@@ -47,7 +47,7 @@
         email: 'usmanity+' + user +'@outbound.io',
         phoneNumber: '+14153056070'
       });
-      outbound.track(user, 'homepage view');
+      outbound.track('homepage view');
     }
     </script>
   </body>
