@@ -15,7 +15,7 @@ body {
   height: 100%;
   background-color: #fff;
   font-family: Roboto, 'Helvetica Neue', Helvetica, sans-serif;
-  color: #353535;
+  color: #4e525a;
   min-width: 200px;
 }
 #hello {
@@ -28,6 +28,25 @@ body {
   font-size: 16px;
   font-weight: 200;
   letter-spacing: 0.2px;
+}
+.arrow-container {
+  position: absolute;
+  bottom: 70px;
+  width: 100%;
+  height: 20px;
+  left: 0;
+  text-align: center;
+}
+.arrow-container img {
+  width: 50px;
+  border-radius: 50%;
+}
+.arrow-container img:hover {
+  cursor: pointer;
+  background-color: rgba(240, 240, 240, 1);
+  -webkit-animation: upColor 0.5s ease-in;
+  -moz-animation:    upColor 0.5s ease-in;
+  animation:         upColor 0.5s ease-in;
 }
 .container {
   height: 100%;
@@ -155,4 +174,21 @@ ul li {
     .work, .projects {
       display: none;
     }
+}
+
+@keyframes upColor {
+  0% {
+    background-color: rgba(240, 240, 240, 0);
+  }
+  100% {
+    background-color: rgba(240, 240, 240, 1);
+  }
+}
+@-webkit-keyframes upColor {
+  0% {
+    background-color: rgba(240, 240, 240, 0);
+  }
+  100% {
+    background-color: rgba(240, 240, 240, 1);
+  }
 }
