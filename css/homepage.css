@@ -16,7 +16,7 @@ body {
   background-color: #fff;
   font-family: Roboto, 'Helvetica Neue', Helvetica, sans-serif;
   color: #353535;
-  min-width: 500px;
+  min-width: 200px;
 }
 #hello {
   font-size: 48px;
@@ -54,14 +54,14 @@ section {
   font-size: 36px;
   margin-bottom: 20px;
   padding-top: 50px;
-  color: white;
-  text-transform: uppercase;
+  color: #494b4a;
+  font-weight: bold;
 }
 ul li {
   list-style: none;
 }
 .work {
-  background-image: url('/images/bridge.jpg');
+  background-image: linear-gradient(-180deg, #FFFFFF 0%, #eef0e5 100%);
   background-size: 100%;
 }
 .work li {
@@ -77,12 +77,6 @@ ul li {
   display: flex;
   box-sizing: border-box;
   padding: 30px;
-}
-.work li .caption {
-  display: none;
-}
-.work li:hover .caption {
-  display: block;
 }
 .work #ob li {
   background-image: url(/images/outbound.png);
@@ -107,12 +101,21 @@ ul li {
   background-color: rgba(114, 174, 184, 1);
   background-image: none;
 }
+
 .caption {
   align-self: center;
   color: white;
+  text-align: center;
+  width: 100%;
+}
+.work li .caption, .projects li .caption {
+  display: none;
+}
+.work li:hover .caption, .projects li:hover .caption {
+  display: block;
 }
 .projects {
-  background-image: url('/images/baldy.png');
+  background-image: linear-gradient(-180deg, #eef0e5 0%, #e8dcbc 100%);
   background-size: 100%;
   -webkit-background-size: cover;
    -moz-background-size: cover;
@@ -125,13 +128,31 @@ ul li {
   float: left;
   height: 500px;
   margin-top: 10vh;
-  border: 1px solid red;
+  display: flex;
+  box-sizing: border-box;
+  padding: 30px;
+}
+.projects li:hover {
+  background-image: none;
+  background-color: #4a90e5;
+}
+.instatab li {
+  background-image: url('/images/instatab.png');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.yt-spotify li {
+  background-image: url('/images/youtube-spotify.jpg');
+  background-size: 88%;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 @media only screen
   and (min-device-width: 320px)
   and (max-device-width: 667px)
   and (-webkit-min-device-pixel-ratio: 2) {
     .work, .projects {
-      background-image: none;
+      display: none;
     }
 }
