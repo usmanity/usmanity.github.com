@@ -48,16 +48,21 @@ section {
   width: 100%;
   text-align: center;
   height: 100%;
-  border: 1px solid rgba(169, 186, 187, 1);
   box-sizing: border-box;
 }
 .section-heading {
-  font-size: 20px;
+  font-size: 36px;
   margin-bottom: 20px;
   padding-top: 50px;
+  color: white;
+  text-transform: uppercase;
 }
 ul li {
   list-style: none;
+}
+.work {
+  background-image: url('/images/bridge.jpg');
+  background-size: 100%;
 }
 .work li {
   width: 30%;
@@ -65,7 +70,54 @@ ul li {
   margin: 0 1.5%;
   height: 400px;
   margin-top: 15vh;
-  border: 1px solid #ccc;
+  background-size: 70%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: white;
+  display: flex;
+  box-sizing: border-box;
+  padding: 30px;
+}
+.work li .caption {
+  display: none;
+}
+.work li:hover .caption {
+  display: block;
+}
+.work #ob li {
+  background-image: url(/images/outbound.png);
+  background-size: 35%;
+}
+.work #ob li:hover {
+  background-color: rgba(78, 82, 89, 1);
+  background-image: none;
+}
+.work #st li {
+  background-image: url(/images/squaretrade.png);
+}
+.work #st li:hover {
+  background-color: rgba(86, 117, 140, 1);
+  background-image: none;
+}
+
+.work #bf li {
+  background-image: url(/images/billfloat.jpg);
+}
+.work #bf li:hover {
+  background-color: rgba(114, 174, 184, 1);
+  background-image: none;
+}
+.caption {
+  align-self: center;
+  color: white;
+}
+.projects {
+  background-image: url('/images/baldy.png');
+  background-size: 100%;
+  -webkit-background-size: cover;
+   -moz-background-size: cover;
+   -o-background-size: cover;
+   background-size: cover;
 }
 .projects li {
   width: 40%;
@@ -74,4 +126,12 @@ ul li {
   height: 500px;
   margin-top: 10vh;
   border: 1px solid red;
+}
+@media only screen
+  and (min-device-width: 320px)
+  and (max-device-width: 667px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    .work, .projects {
+      background-image: none;
+    }
 }
