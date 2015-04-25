@@ -82,6 +82,7 @@ ul li {
 .work {
   background-image: linear-gradient(-180deg, #FFFFFF 0%, #eef0e5 100%);
   background-size: 100%;
+  position: relative;
 }
 .work li {
   width: 30%;
@@ -178,6 +179,12 @@ ul li {
       display: none;
     }
 }
+.work-arrow .arrow:hover {
+  background-color: rgba(233, 221, 190, 1);
+  -webkit-animation: upToBlue 0.5s ease-in;
+  -moz-animation:    upToBlue 0.5s ease-in;
+  animation:         upToBlue 0.5s ease-in;
+}
 
 @keyframes upColor {
   0% {
@@ -193,5 +200,40 @@ ul li {
   }
   100% {
     background-color: rgba(240, 240, 240, 1);
+  }
+}
+
+@-moz-keyframes upColor {
+  0% {
+    background-color: rgba(240, 240, 240, 0);
+  }
+  100% {
+    background-color: rgba(240, 240, 240, 1);
+  }
+}
+
+@keyframes upToBlue {
+  0% {
+    background-color: rgba(233, 221, 190, 0);
+  }
+  100% {
+    background-color: rgba(233, 221, 190, 1);
+  }
+}
+@-webkit-keyframes upToBlue {
+  0% {
+    background-color: rgba(233, 221, 190, 0);
+  }
+  100% {
+    background-color: rgba(233, 221, 190, 1);
+  }
+}
+
+@-moz-keyframes upToBlue {
+  0% {
+    background-color: rgba(233, 221, 190, 0);
+  }
+  100% {
+    background-color: rgba(233, 221, 190, 1);
   }
 }

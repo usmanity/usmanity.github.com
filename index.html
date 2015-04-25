@@ -30,11 +30,12 @@
             <p>
               Check out my <a href="http://blog.usmanity.com">blog</a>.
             </p>
+
           </div>
 
       </div>
       <div class="arrow-container">
-        <img src="/images/arrow.png" class="arrow" alt="scroll down please"/>
+        <img src="/images/arrow.png" id="welcome" class="arrow" alt="scroll down please"/>
       </div>
     </div>
 
@@ -66,6 +67,9 @@
           </li>
         </a>
       </ul>
+      <div class="arrow-container work-arrow">
+        <img src="/images/arrow.png" id="work-arrow" class="arrow" alt="scroll down please"/>
+      </div>
     </section>
     <section class="projects">
       <div class="section-heading">Projects</div>
@@ -88,14 +92,21 @@
     </section>
     <script type="text/javascript">
     console.info("Hi, thanks for checking out my homepage! If you'd like to get in touch, email me at muhammad@usmanity.com");
-    $('.arrow').on('click', function(event) {
-      var target = $('section');
+    var scrollTo = function(target){
       if( target.length ) {
           event.preventDefault();
           $('html, body').animate({
               scrollTop: target.offset().top
           }, 1000);
       }
+    }
+    $('#welcome').on('click', function(event) {
+      var target = $('.work');
+      scrollTo(target);
+    });
+    $('#work-arrow').on('click', function(event) {
+      var target = $('.projects');
+      scrollTo(target);
     });
     </script>
   </body>
