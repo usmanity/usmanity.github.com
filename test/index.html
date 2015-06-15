@@ -33,7 +33,19 @@
           <br>
           <button type="button" name="button"
           onclick="outbound.track('testing');">
-            Fancy button
+            call testing
+          </button>
+          <button type="button" name="button"
+          onclick="outbound.track('page view');">
+            call page view
+          </button>
+          <button type="button" name="button"
+          onclick="outbound.track('another random event');">
+            call another random event
+          </button>
+          <button type="button" name="button"
+          onclick="outbound.identify(Math.random());">
+            Identify random user
           </button>
       </div>
     </div>
