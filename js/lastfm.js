@@ -34,7 +34,7 @@ usm = {
               }
 							break;
 				    case "#lastfm":
-					    count = data.user.playcount;
+					    count = usm.addComma(data.user.playcount);
 					    $(id)[0].innerHTML = count + '<span class="type"> songs scrobbled</span>';
 					    break;
 		    }
@@ -44,6 +44,18 @@ usm = {
 	init: function() {
 		apps = $('.app');
 		usm.render(apps);
+	},
+        addComma: function addCommas(nStr)
+	{
+	    nStr += '';
+	    var x = nStr.split('.');
+	    var x1 = x[0];
+	    var x2 = x.length > 1 ? '.' + x[1] : '';
+	    var rgx = /(\d+)(\d{3})/;
+	    while (rgx.test(x1)) {
+		x1 = x1.replace(rgx, '$1' + ',' + '$2');
+	    }
+	    return x1 + x2;
 	},
 	render: function(apps) {
 		for (var i = 0; i < apps.length; i++){
