@@ -31,28 +31,16 @@
       <div class="main">
           Index page
           <br>
-          <button type="button" name="button"
-          onclick="outbound.track('inWebPush');">
-            send me an in web push plz
-          </button>
-          <button type="button" name="button"
-          onclick="outbound.track('page view');">
-            call page view
-          </button>
-          <button type="button" name="button"
-          onclick="outbound.track('premailer-testing');">
-            Premailer testing event
-          </button>
           <p>
             <button type="button" name="button"
-            onclick="outbound.track('nested_json');">
-              callback even jasld jfja sdlfj ast
+            onclick="outbound.track('a1', {name: 'usmanity'});">
+              send a1
             </button>
           </p>
           <p>
             <button type="button" name="button"
-            onclick="outbound.track('attribute filter');">
-              call attribute filter
+            onclick="outbound.track('b1', {name: 'usmanity'});">
+              send b1
             </button>
           </p>
           <button type="button" name="button"
@@ -74,7 +62,7 @@
         email: 'usmanity+testUser@outbound.io',
         phoneNumber: '+14153056070'
       });
-    // }
+    }
 
     console.log("user identified as ", user);
     </script>
