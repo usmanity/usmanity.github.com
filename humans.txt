@@ -15,6 +15,7 @@ People:
   - Kristen Ojeda, @kristenojeda
   - Mohnish T., @mohnish
   - Noah S., noah.org
+  - Ethan Sutin
 
 Ideas & Projects:
   - Wikipedia
