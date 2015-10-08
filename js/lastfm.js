@@ -36,6 +36,7 @@ usm = {
 				    case "#lastfm":
 					    count = usm.addComma(data.user.playcount);
 					    $(id)[0].innerHTML = count + '<span class="type"> songs scrobbled</span>';
+							document.title = count + " plays";
 					    break;
 		    }
 			}
