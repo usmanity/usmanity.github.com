@@ -16,7 +16,7 @@ function jsonFlickrApi (response) {
 }
 
 function renderPhoto(photo) {
-	$('img').attr('src', photo.source)
+	$('.main').attr('src', photo.source);
 }
 
 function startGettingPhotos () {
@@ -43,6 +43,7 @@ function displayPhotos() {
 
 $(document).ready(function(){
 	startGettingPhotos();
-	$('img').click(displayPhotos);
-	$.event.special.swipe.handleSwipe(displayPhotos);
+	$('.main').click(displayPhotos);
+	$('body').on('swipeleft', displayPhotos);
+	$('body').on('swiperight', displayPhotos);
 });
