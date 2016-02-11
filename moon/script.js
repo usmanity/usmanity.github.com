@@ -44,4 +44,5 @@ function displayPhotos() {
 $(document).ready(function(){
 	startGettingPhotos();
 	$('img').click(displayPhotos);
+	$.event.special.swipe.handleSwipe(displayPhotos);
 });
