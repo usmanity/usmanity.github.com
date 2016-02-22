@@ -2,10 +2,8 @@ body {
   width: 80%;
   margin: auto;
   color: rgba(48, 48, 48, 1);
-  font-family: 'Roboto', sans-serif;
-}
-address {
-  color: rgba(136, 139, 142, 1);
+  font-family: 'Sans source', 'Roboto', sans-serif;
+  letter-spacing: 0.03em;
 }
 #skills {
   width: 20%;
