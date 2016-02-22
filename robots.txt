@@ -1,2 +1,3 @@
 User-agent: *
 Disallow: /clouds-in-tracy
+Disallow: /keys.html
