@@ -29,8 +29,6 @@ usm = {
 										console.log(trackId);
 										$(".links").append(spotify);
 								});
-								// $(id).append('<div class="links"></div>');
-								usm.showRank();
               }
 							break;
 				    case "#lastfm":
@@ -65,34 +63,6 @@ usm = {
 			usm.count(url, id);
 		}
 		$(".spinner").hide();
-	},
-	showRank: function(){
-		var top500, rank;
-		var el = $(".now-playing");
-
-		$.ajax({
-		  url:"https://www.kimonolabs.com/api/c06r53dy?apikey=Nh7rKXZcHCVAiEVYvYN8Y0Ba1uBtLgB3",
-		  crossDomain: true,
-		  dataType: "jsonp",
-		  success: function (response) {
-		    top500 = response;
-				_.each(top500.results.collection1, function(song){
-					if (song.track.text.toLowerCase() === songName.toLowerCase()){
-						rank = song.rank;
-					}
-				});
-
-				if (rank){
-					console.log("This song is #" + rank + " out of my top 500.");
-					el.append("<div>This song is #" + rank + " out of my top 500.</div>");
-				}
-		  },
-		  error: function (xhr, status) {
-		    console.log("error found" + status);
-		  }
-		});
-
-
 	}
 }
 $(document).ready(usm.init);
