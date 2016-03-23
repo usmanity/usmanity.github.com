@@ -33,10 +33,12 @@ orca = {
               }
 							break;
 				    case "#lastfm":
-							song = '"' + data.recenttracks.track[0].name + '" by ' + data.recenttracks.track[0].artist['#text'];
-					    count = orca.addComma(data.user.playcount);
-					    $(id)[0].innerHTML = count + '<span class="type"> songs scrobbled</span>';
-							document.title = song + ' - ' + count + " plays";
+							if (data.recenttracks.track[0]['@attr']) {
+								song = '"' + data.recenttracks.track[0].name + '" by ' + data.recenttracks.track[0].artist['#text'];
+						    count = orca.addComma(data.user.playcount);
+						    $(id)[0].innerHTML = count + '<span class="type"> songs scrobbled</span>';
+								document.title = song + ' - ' + count + " plays";
+							}
 					    break;
 		    }
 			}
