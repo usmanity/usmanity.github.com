@@ -35,7 +35,7 @@ orca = {
 				    case "#lastfm":
 					    count = orca.addComma(data.user.playcount);
 					    $(id)[0].innerHTML = count + '<span class="type"> songs scrobbled</span>';
-							document.title = song + ' - ' + count + " plays";
+							document.title = count + " plays";
 					    break;
 		    }
 			}
