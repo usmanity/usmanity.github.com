@@ -5,7 +5,7 @@ var track;
 var spotify;
 var itunes;
 var amazon;
-usm = {
+orca = {
 	count: function(url, id) {
 		$.ajax({
 		    url: url,
@@ -24,6 +24,7 @@ usm = {
 								var url = 'https://api.spotify.com/v1/search?limit=1&type=track&query=' + track;
 								$.get(url, function(data){
 										spotifyResponse = data;
+
 										var trackId = spotifyResponse.tracks.items[0].uri;
 										spotify = $("<a href='" + trackId +"' class='open-in-spotify'>Spotify</a>");
 										console.log(trackId);
@@ -32,9 +33,10 @@ usm = {
               }
 							break;
 				    case "#lastfm":
-					    count = usm.addComma(data.user.playcount);
+							song = '"' + data.recenttracks.track[0].name + '" by ' + data.recenttracks.track[0].artist['#text'];
+					    count = orca.addComma(data.user.playcount);
 					    $(id)[0].innerHTML = count + '<span class="type"> songs scrobbled</span>';
-							document.title = count + " plays";
+							document.title = song + ' - ' + count + " plays";
 					    break;
 		    }
 			}
@@ -42,7 +44,7 @@ usm = {
 	},
 	init: function() {
 		apps = $('.app');
-		usm.render(apps);
+		orca.render(apps);
 	},
         addComma: function addCommas(nStr)
 	{
@@ -60,10 +62,10 @@ usm = {
 		for (var i = 0; i < apps.length; i++){
 			var url = $(apps[i]).data("url");
 			var id = "#" + apps[i].id;
-			usm.count(url, id);
+			orca.count(url, id);
 		}
 		$(".spinner").hide();
 	}
 }
-$(document).ready(usm.init);
-setInterval(usm.init, 10000);
+$(document).ready(orca.init);
+setInterval(orca.init, 10000);
