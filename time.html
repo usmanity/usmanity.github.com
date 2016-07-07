@@ -19,7 +19,7 @@
         var ampm = d.getHours() > 11 ? 'PM' : 'AM';
         var seconds = d.getSeconds() < 10 ? '0' + d.getSeconds() : d.getSeconds();
         var minutes = d.getMinutes() < 10 ? '0' + d.getMinutes() : d.getMinutes();
-        var hour = 11 % d.getHours();
+        var hour = 11 % d.getHours() - 7;
         var ds = hour + ":" + minutes + ":" + seconds + " " + ampm;
         $('title').text(ds);
         $('#time').text(ds);
