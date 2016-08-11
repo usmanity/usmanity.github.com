@@ -1,1 +1,68 @@
+==================================================================
 https://keybase.io/usmanity
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://www.usmanity.com
+  * I am usmanity (https://keybase.io/usmanity) on keybase.
+  * I have a public key with fingerprint EB37 11ED D707 2181 8159  DA9E AD74 4F96 DB5B AC33
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "eldest_kid": "0101adfae717d5ab4d65c57d4642c44519a59a91e488e48fc6f1de8f4fde330fa8320a",
+            "fingerprint": "eb3711edd70721818159da9ead744f96db5bac33",
+            "host": "keybase.io",
+            "key_id": "ad744f96db5bac33",
+            "kid": "0101adfae717d5ab4d65c57d4642c44519a59a91e488e48fc6f1de8f4fde330fa8320a",
+            "uid": "8ef1e1875f06117796d12dc2904d9b19",
+            "username": "usmanity"
+        },
+        "service": {
+            "hostname": "www.usmanity.com",
+            "protocol": "https:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1470957737,
+    "expire_in": 157680000,
+    "prev": "4e93b20cf6db7c2046bf7a6ddd37d22789e097eb060c8fc40bc6e6062d0ccb35",
+    "seqno": 3,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.0.55
+Comment: https://keybase.io/crypto
+
+yMIsAnicrVJbSFRBGN61zNIuChVdtMuxsshs5tzmnCW6ahlEKBZGCducmTl6XHfP
+tues22ZK0EOUXSDopZv0ksVWKGEk9ZBlNyos0uyliCApizIMpKBojtRbj80wDPPP
+933//3/83ZPG+DL9aTRf6GxeON//qOtU3Fd5efzFBsGwaVIINAghNnqxOsocNxiy
+qBAQAAQQUxMzBBFVsCFTVSEKorIqi0SWFahjRcc6ZLKm8WMS1YSUaaZsUiZJwMSa
+JAIsFAqmFalmsWjMirhclhkSgpBRigASoca3olOsM0yRLJu6Sg3FwESSOLHGdjwG
+L87ADiuybB7jj+Boef/A/+e646NyGjMhgxpSTKBCiBDPCEVKRB3IVDeg7gEdFovg
+MOPouBPGEctNCo2FAo/WW4R5xnqd/EEkEomiv6giYoc5PxqzXZvYdfy3xnWjTsBj
+u8noKJwZwT9CQcOKUO4lZ9SzmGPZESEAOZK4lqcMZQR0BSEJFQpsd9SKsaDlIRSk
+aoAvLw+r55Iy0yVDBMTk3iEiAlk1TIRVSqmEqCgiTWdAR8wAKiDcHhkYRGUqUEUK
+CDEkRfBa2xWxhYDEy8TVXNKxqiPYjceY0Hj7VtVYnz/TNy49zZsxX+aE7L+Td/xK
+xs+5lbWnc8r693/a2TbmXOvzZSsvfFwyuTTtoZuasKVsxYLNq0v93y63R+uuv219
++eZOcWdPoGHDrHu9eXuT5du71r4+e25batrA1L6M+M0F/Y2poTMjbXlHa1/cKF84
+fd0HK7V+4tbOk7fnDE5Z2r4vq+Vloi134+T8gz/I5uySrvWZ5T9r2w/7mx6toc2r
+RoovLftccexhakdz390VwVDBO6Fkxvmh4fTS7pLFuS2vZm+ZOdBnFve3FAwXViRa
+FxFw/1DV3GM5H+6veZorPpvXm6P3fO29Unt8k9z9/UHo8fR1geiv3C/hJuMafX+k
+I7umdFHW8izrqpu+50R4+CkeONBxcGiw4slvuec+Tg==
+=3Aap
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/usmanity
+
+==================================================================
