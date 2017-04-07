@@ -1,0 +1,15 @@
+{
+  "name": "usmanity.github.com",
+  "version": "3.3",
+  "description": "Homepage for Muhammad Usman",
+  "main": "index.js",
+  "repository": {
+    "url": "git@github.com:usmanity/usmanity.github.com.git",
+    "type": "git"
+  },
+  "author": "Muhammad Usman <muhammad@usmanity.com>",
+  "license": "?",
+  "dependencies": {
+    "jquery": "^3.2.1"
+  }
+}
