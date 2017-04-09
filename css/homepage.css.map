@@ -1,0 +1,12 @@
+{
+	"version": 3,
+	"file": "homepage.css",
+	"sources": [
+		"../scss/homepage.scss",
+		"../scss/partials/_reset.scss",
+		"../scss/partials/_typography.scss",
+		"../scss/partials/_grid.scss"
+	],
+	"names": [],
+	"mappings": "ACAA,AAAA,IAAI,CAAE,AAAA,IAAI,AAAC,CACT,OAAO,CAAE,CAAC,CACV,MAAM,CAAE,CAAC,CACV,AAED,AAAA,IAAI,AAAC,CACH,KAAK,CAAE,IAAI,CACZ,ACPD,AAAA,IAAI,AAAC,CACH,SAAS,CAAE,IAAI,CACf,WAAW,CAAE,6IAA6I,CAC3J,AAKD,AAAA,kBAAkB,AAAC,CAFjB,UAAU,CAAE,MAAM,CAInB,ACVD,AAAA,UAAU,AAAC,CACT,OAAO,CAAE,KAAK,CDKd,UAAU,CAAE,MAAM,CCHnB,AAGD,AAAA,eAAe,AAAC,CACd,OAAO,CAAE,IAAI,CACd"
+}
