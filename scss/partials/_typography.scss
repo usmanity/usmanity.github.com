@@ -1,13 +1,18 @@
 @import '_colors';
+html {
+  // a simple base font size so that everything is easier to size relatively using REM
+  font-size: 10px;
+}
 body {
   color: $black;
-  font-size: 15px;
+  font-size: 1.6rem;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
 @mixin text-align-center {
   text-align: center;
 }
+
 .text-align-center {
   @include text-align-center;
 }
@@ -23,9 +28,11 @@ a {
 
 .title {
   letter-spacing: 0.02em;
+  font-size: 3rem;
 }
 
 nav {
+  font-size: 1.8rem;
   li a {
     color: $blue;
   }
