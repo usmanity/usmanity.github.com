@@ -27,7 +27,8 @@ module.exports = function(grunt) {
 			},
 			dist: {
 				files: {
-					'css/homepage.css' : 'scss/homepage.scss'
+					'css/homepage.css' : 'scss/homepage.scss',
+					'css/favorites.css' : 'scss/favorites.scss'
 				}
 			}
 		}
