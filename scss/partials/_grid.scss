@@ -1,9 +1,24 @@
+// an opinionated grid setup
 .container {
-  display: block;
-  @include text-align-center;
+  @include text-align-center; // purposely center the main container
+  padding-top: 2vh; // just 2% of the viewport height
 }
 
 // flex grid containers
 .flex-container {
   display: flex;
+  &.align-items-center {
+    align-items: center;
+    justify-content: center;
+  }
+  li {
+    flex: none;
+    width: auto;
+    margin-right: 20px;
+  }
+}
+
+nav {
+  margin: auto;
+  text-align: center;
 }
