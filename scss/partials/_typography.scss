@@ -35,5 +35,21 @@ nav {
   font-size: 1.8rem;
   li a {
     color: $blue;
+    letter-spacing: 0.01rem;
+    &.current {
+      color: $black;
+    }
+  }
+}
+
+@media (max-width: 420px) {
+  body {
+    font-size: 1.6rem;
+  }
+  .title {
+    font-size: 1.8rem;
+  }
+  nav {
+    font-size: 1.4rem;
   }
 }
