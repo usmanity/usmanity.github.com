@@ -19,8 +19,13 @@
 }
 
 nav {
-  margin: auto;
   text-align: center;
+  margin-top: 40px;
+}
+
+article {
+  width: 400px;
+  margin: auto;
 }
 
 @media (max-width: 420px) {
