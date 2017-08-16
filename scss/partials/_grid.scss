@@ -1,18 +1,22 @@
 body {
-  margin-left: 40px;
-}
-nav {
-  margin-top: 40px;
+  margin: 0;
+  padding: 0;
 }
 
 article {
   width: 400px;
 }
 
+.container {
+  max-width: 480px;
+  margin-left: 40px;
+  margin-top: 38px;
+}
+
 @media (max-width: 420px) {
   .container {
       max-width: 300px;
-      margin: auto;
+      margin-top: 36px;
   }
   .flex-container {
       margin: 20px;
