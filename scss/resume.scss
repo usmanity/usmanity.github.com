@@ -1,8 +1,51 @@
 @import "partials/_reset";
-@import "partials/_typography";
-@import "partials/_grid";
+
+body {
+  color: #111111;
+  margin: 10%;
+  font-family: sans-serif;
+  letter-spacing: 0.03em;
+}
+
+h1 {
+  font-weight: 100;
+  opacity: 0.5;
+}
+
+h2 {
+}
 
 section {
-  border: 1px solid #ff4136;
-  border-radius: 2px;
+  margin: 20px 0;
+  &.work {
+    .job-title {
+      margin: 5px 0;
+      font-size: 14px;
+    }
+    .company-name {
+      margin: 10px 0;
+      opacity: 0.8;
+      font-weight: 18px;
+    }
+    .description {
+      font-size: 13px;
+      line-height: 17px;
+    }
+  }
+}
+
+.projects {
+  ul {
+    li {
+      margin: 10px 0;
+      font-size: 14px;
+      a {
+        text-decoration: none;
+        color: #0074d9;
+        &:hover {
+          border-bottom: 1px solid #0074d9;
+        }
+      }
+    }
+  }
 }
