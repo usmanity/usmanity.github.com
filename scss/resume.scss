@@ -7,6 +7,14 @@ body {
   letter-spacing: 0.03em;
 }
 
+a {
+  text-decoration: none;
+  color: #0074d9;
+  &:hover {
+    border-bottom: 1px solid #0074d9;
+  }
+}
+
 h1 {
   font-weight: 100;
   opacity: 0.5;
@@ -39,13 +47,8 @@ section {
     li {
       margin: 10px 0;
       font-size: 14px;
-      a {
-        text-decoration: none;
-        color: #0074d9;
-        &:hover {
-          border-bottom: 1px solid #0074d9;
-        }
-      }
     }
   }
+}
+.contact {
 }
