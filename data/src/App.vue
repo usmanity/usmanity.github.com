@@ -1,55 +1,61 @@
 <template>
   <div id="app">
     <h1>{{ msg }}</h1>
-    <ul class="cards">
-      <li  v-for="cardData in currentData">
-      <card>
-        <div class="test" slot="content">
-          <h1>{{ cardData.type }}</h1>
-          {{ cardData.latest }}
-          <strong>
-            {{ cardData.date }}
-          </strong>
-        </div>
-      </card>
-      </li>
-    </ul>
+
+      <div v-show="currentData != {}" class="cards">
+        <card class="movies" background="M" title="Movies">
+          <div slot="content">
+            <h2>Movies rated</h2>
+            {{ currentData.movies.count }}
+            <h2>Most recent</h2>
+            = TODO
+          </div>
+        </card>
+        <card class="weight" background="W" title="Weight">
+          <div slot="content">
+            <h2>Latest</h2>
+            {{ currentData.weight.current_weight }}
+          </div>
+        </card>
+        <card class="net-worth" background="$" title="Net Worth">
+          <div slot="content">
+            <h2>Latest</h2>
+            {{ currentData.net_worth.current_net_worth }}
+          </div>
+        </card>
+      </div>
+    </div>
+
   </div>
 </template>
 
 <script>
 import Card from "./components/Card.vue";
+import axios from "axios";
 
 export default {
-  name: "app",
+  name: "data",
   components: {
     Card
   },
   data() {
     return {
-      msg: "Welcome",
-      currentData: [
-        {
-          type: "movies",
-          latest: "The Big Sick",
-          date: "2017-09-05"
-        },
-        {
-          type: "weight",
-          latest: "131.4",
-          date: "2017-09-01"
-        },
-        {
-          type: "net-worth",
-          latest: "39835",
-          date: "2017-09-06"
-        }
-      ]
+      msg: "Data",
+      currentData: {}
     };
+  },
+  mounted() {
+    var self = this;
+    axios.get("http://data.usmanity.com").then(function(res) {
+      self.currentData = res.data;
+    });
   }
 };
 </script>
 
 <style lang="scss">
-
+.cards {
+  display: flex;
+  flex-direction: row;
+}
 </style>
