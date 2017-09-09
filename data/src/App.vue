@@ -2,25 +2,19 @@
   <div id="app">
     <h1>{{ msg }}</h1>
 
-      <div v-show="currentData != {}" class="cards">
-        <card class="movies" background="M" title="Movies">
+      <div v-if="currentData !== {}" class="cards">
+        <card class="weight" title="Weight">
           <div slot="content">
-            <h2>Movies rated</h2>
-            {{ currentData.movies.count }}
-            <h2>Most recent</h2>
-            = TODO
+            <h2>{{ currentData.weight.current_weight }}</h2>
+            {{ currentData.weight.last_recorded_date }}
           </div>
         </card>
-        <card class="weight" background="W" title="Weight">
+        <card class="net-worth" title="Net Worth">
           <div slot="content">
-            <h2>Latest</h2>
-            {{ currentData.weight.current_weight }}
-          </div>
-        </card>
-        <card class="net-worth" background="$" title="Net Worth">
-          <div slot="content">
-            <h2>Latest</h2>
-            {{ currentData.net_worth.current_net_worth }}
+            <h2>$ {{ netWorth }}</h2>
+            <div class="last-updated">
+              {{ currentData.net_worth.last_recorded_date }}
+            </div>
           </div>
         </card>
       </div>
@@ -43,6 +37,13 @@ export default {
       msg: "Data",
       currentData: {}
     };
+  },
+  computed: {
+    netWorth() {
+      return this.currentData.net_worth.current_net_worth
+        .toString()
+        .replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+    }
   },
   mounted() {
     var self = this;

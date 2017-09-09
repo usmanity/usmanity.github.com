@@ -1,9 +1,6 @@
 <template lang="html">
   <div class="card-wrapper">
-    <div class="bg-artifact">
-      {{ background }}
-    </div>
-    <h1> {{ title }}</h1>
+    {{ title }}
     <slot name="content"></slot>
   </div>
 </template>
@@ -11,14 +8,14 @@
 <script>
 export default {
   name: "card",
-  props: ["background", "title"]
+  props: ["title"]
 };
 </script>
 
 <style lang="scss">
 .card-wrapper {
   min-width: 200px;
-  min-height: 200px;
+  min-height: 100px;
   padding: 20px;
   border-radius: 4px;
   background-color: white;
@@ -27,13 +24,6 @@ export default {
   color: #0074D9;
   position: relative;
   overflow: hidden;
-}
-.bg-artifact {
-  position: absolute;
-  font-size: 100px;
-  font-weight: bold;
-  color: rgba(200, 200, 200, 0.1);
-  bottom: -30px;
-    right: -10px;
+  text-align: center;
 }
 </style>
