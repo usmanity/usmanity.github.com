@@ -1,0 +1,18 @@
+body {
+  font-family: sans-serif;
+}
+
+.container {
+  text-align: center;
+}
+
+.miner {
+  margin: auto;
+  width: 220px;
+}
+
+.description {
+  width: 300px;
+  margin: 30px auto;
+}
+/*# sourceMappingURL=style.css.map */
