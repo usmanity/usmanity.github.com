@@ -1,23 +1,23 @@
 <template>
   <div id="app">
-    <HelloWorld/>
+    <Coins/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld'
+import Coins from './components/Coins'
 
 export default {
   name: 'app',
   components: {
-    HelloWorld
+    Coins
   }
 }
 </script>
 
 <style>
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  font-family: 'Avenir', 'San Francisco', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
