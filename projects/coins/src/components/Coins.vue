@@ -2,11 +2,11 @@
   <div class="coins">
     <h1>{{ msg }}</h1>
     <div class="raw">
-      <ul>
+      <ol>
         <li v-for="coin in coinData">
           {{ coin.name }}
         </li>
-      </ul>
+      </ol>
     </div>
   </div>
 </template>
@@ -18,7 +18,7 @@ export default {
   name: 'Coins',
   data () {
     return {
-      msg: 'Welcome',
+      msg: 'Top 10',
       coinData: {}
     }
   },
