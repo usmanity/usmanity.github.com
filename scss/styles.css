@@ -20,7 +20,7 @@ ul li {
 
 html {
   font-size: 10px;
-  font-family: 'DIN Next W01 Regular', sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
 }
 
 body {
@@ -121,7 +121,7 @@ article {
 }
 
 .intro {
-  margin-top: 42px;
+  margin-top: 40px;
 }
 
 .projects ul li {
