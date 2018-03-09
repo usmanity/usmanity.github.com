@@ -40,7 +40,7 @@ p {
 // hovering should only show underline
 a {
   text-decoration: none;
-  color: $blue;
+  color: #DDDDDF;
   opacity: 0.8;
   &:hover {
     border-bottom: 1px solid;
