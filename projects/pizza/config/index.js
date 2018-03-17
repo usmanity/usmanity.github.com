@@ -50,7 +50,7 @@ module.exports = {
     // Paths
     assetsRoot: path.resolve(__dirname, '../order'),
     assetsSubDirectory: 'static',
-    assetsPublicPath: '/projects/',
+    assetsPublicPath: '/projects/pizza',
 
     /**
      * Source Maps
