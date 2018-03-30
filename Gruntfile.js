@@ -27,7 +27,8 @@ module.exports = function(grunt) {
         files: {
           "css/styles.css": "scss/styles.scss",
           "css/favorites.css": "scss/favorites.scss",
-          "css/resume.css": "scss/resume.scss"
+          "css/resume.css": "scss/resume.scss",
+          "css/now.css": "scss/now.scss",
         }
       }
     }

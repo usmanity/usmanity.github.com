@@ -11,18 +11,8 @@ body {
   font-size: 1.6rem;
 }
 
-h1,
-h2,
-h3 {
-  font-family: 'DIN Next W01 Light', sans-serif;
-}
-
-strong {
-  font-family: 'DIN Next W01 Medium', sans-serif;
-}
-
 p {
-  line-height: 1.8rem;
+  line-height: 1.9rem;
 }
 
 @mixin text-align-center {
@@ -40,11 +30,10 @@ p {
 // hovering should only show underline
 a {
   text-decoration: none;
-  color: #DDDDDF;
   opacity: 0.8;
+  border-bottom: 1px solid transparent;
   &:hover {
-    border-bottom: 1px solid;
-    opacity: 1;
+    border-bottom: 1px solid currentColor;
     transition: opacity 0.8s;
   }
 }
@@ -52,27 +41,4 @@ a {
 .title {
   letter-spacing: 0.02em;
   font-size: 3rem;
-}
-
-nav {
-  font-size: 1.8rem;
-  li a {
-    opacity: 0.5;
-    letter-spacing: 0.01rem;
-    &.current {
-      color: $black;
-    }
-  }
-}
-
-@media (max-width: 420px) {
-  body {
-    font-size: 1.6rem;
-  }
-  .title {
-    font-size: 1.8rem;
-  }
-  nav {
-    font-size: 1.4rem;
-  }
 }
