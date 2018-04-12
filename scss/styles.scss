@@ -3,10 +3,13 @@
 @import 'partials/_grid';
 
 body {
-  background-color: #1877B2;
-  color: #DDDDDF;
+  background-color: #111111;
+  color: #F6E5B3;
 }
 
+a {
+  color: #CFBB79;
+}
 
 .intro {
   margin-top: 40px;
@@ -21,7 +24,6 @@ body {
 }
 
 .container {
-  max-width: 600px;
-  margin-left: 40px;
-  margin-top: 38px;
+  max-width: 500px;
+  margin: auto;
 }
