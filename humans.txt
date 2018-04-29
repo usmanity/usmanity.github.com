@@ -1,11 +1,13 @@
-humans.txt
+humans.txt 🤔
 ==========
 
 This website and its contents are mostly created by me, Muhammad Usman.
 
 Over time, I have learned a tremendous amount of things from people listed below.
 
-You can find out more about me at https://www.usmanity.com or my blog at http://blog.usmanity.com
+You can find out more about me at https://usmanity.com or my blog at http://blog.usmanity.com
+
+Contact me on Twitter: https://twitter.com/usmanity
 
 -------------------------------------
 
