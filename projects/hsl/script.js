@@ -10,14 +10,16 @@ var app = new Vue({
             l: null,
         }
     },
-    watch: {
-        hInput(value, type, type2) {
-            console.log(value);
-            console.log(type);
-            console.log(type2);
-            while (this.colors.h < 360) {
-                this.colors.h = value; 
+    methods: {
+        updateColor(j) {
+            if (j.keyCode === 38) {
+                // go up
+                this.colors.h++; 
+            } else if (j.keyCode === 40) {
+                // go down
+                this.colors.h--; 
             }
+            console.log(this.colors.h);
         }
     },
     created() {
