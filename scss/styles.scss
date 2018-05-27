@@ -3,12 +3,12 @@
 @import 'partials/_grid';
 
 body {
-  background-color: $dark;
-  color: #D1D2D7;
+  background-color: $bg-color;
+  color: $text-color;
 }
 
 a {
-  color: #CFBB79;
+  color: $link-color;
 }
 
 .intro {

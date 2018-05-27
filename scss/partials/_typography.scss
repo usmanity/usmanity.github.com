@@ -44,12 +44,17 @@ a {
   font-size: 3rem;
 }
 
+h1 {
+  font-weight: bold;
+}
+
 li {
   list-style: none;
   margin-left: 0;
   padding-left: 0;
   &:before {
     content: '»';
+    opacity: 0.5;
     padding-right: 8px;
   }
 }
