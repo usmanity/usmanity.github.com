@@ -1,4 +1,5 @@
 @import '_colors';
+@import url('https://rsms.me/inter/inter-ui.css');
 
 html {
   // a simple base font size so that everything is easier to size relatively using REM
@@ -8,7 +9,7 @@ body {
   background-color: white;
   color: $black;
   font-size: 1.6rem;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-family: 'Inter UI', sans-serif;
 }
 
 p {
@@ -41,4 +42,14 @@ a {
 .title {
   letter-spacing: 0.02em;
   font-size: 3rem;
+}
+
+li {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
+  &:before {
+    content: '»';
+    padding-right: 8px;
+  }
 }
