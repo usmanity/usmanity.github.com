@@ -1,0 +1,71 @@
+#flag {
+  width: 617px;
+  height: 323.5px;
+  background-color: #FFF;
+}
+
+#flag .red-stripes {
+  width: 100%;
+  height: 100%;
+  list-style: none;
+  position: relative;
+}
+
+#flag .red-stripes .red-stripe {
+  width: 100%;
+  height: calc(100% / 13);
+  background-color: #EB3E00;
+  margin-top: 25px;
+}
+
+#flag .red-stripes .red-stripe.first {
+  margin-top: 0;
+}
+
+#flag .stars {
+  background-color: #340E71;
+  list-style: none;
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: white;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 175px;
+  width: 308.5px;
+  z-index: 10;
+}
+
+#flag .stars .star-row-even, #flag .stars .star-row-odd {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  margin: auto;
+}
+
+#flag .stars .star-row-odd {
+  padding-left: 21px;
+  width: calc(100% - 62px);
+}
+
+#flag .stars .star-row-odd .star {
+  width: 20%;
+}
+
+#flag .stars .star-row-even {
+  margin-top: -1px;
+  padding-left: 16px;
+}
+
+#flag .stars .star-row-even .star {
+  width: 50px;
+}
+
+#flag .stars .star {
+  width: 16.66667%;
+}
+/*# sourceMappingURL=styles.css.map */

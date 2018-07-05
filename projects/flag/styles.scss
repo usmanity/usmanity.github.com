@@ -1,0 +1,67 @@
+$red: #EB3E00;
+$blue: #340E71;
+$white: #FFF;
+
+$multiplier: 0.5;
+$flag-width: 1234px * $multiplier;
+$flag-height: 647px * $multiplier;
+$blues-height: 175px;
+$blues-width: $flag-width / 2;
+$even-star-width: 100% / 6;
+$stripe-margin: 25px;
+
+#flag {
+    width: $flag-width;
+    height: $flag-height;
+    background-color: $white;
+    .red-stripes {
+        width: 100%;
+        height: 100%;
+        list-style: none;
+        position: relative;
+        .red-stripe {
+            width: 100%;
+            height: calc(100% / 13);
+            background-color: $red;
+            margin-top: $stripe-margin;
+            &.first {
+                margin-top: 0;
+            }
+        }
+        
+    }
+    .stars {
+        background-color: $blue;
+        list-style: none;
+        position: absolute;
+        display: flex;
+        color: white;
+        flex-direction: column;
+        height: $blues-height;
+        width: $blues-width;
+        z-index: 10;
+        .star-row-even, .star-row-odd {
+            display: flex;
+            width: 100%;
+            margin: auto;
+            // justify-content: space-between;
+        }
+        .star-row-odd {
+            padding-left: 21px;
+            width: calc(100% - 62px);
+            .star {
+                width: 20%;
+            }
+        }
+        .star-row-even {
+            margin-top: -1px;
+            padding-left: 16px;
+            .star {
+                width: 50px;
+            }
+        }
+        .star {
+            width: $even-star-width;
+        }
+    }
+}
