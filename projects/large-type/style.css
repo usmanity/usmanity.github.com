@@ -1,0 +1,11 @@
+#app {
+  text-align: center;
+  font-size: 20px;
+  font-family: sans-serif;
+}
+
+#app .large-text {
+  font-size: 64px;
+  margin-top: 100px;
+}
+/*# sourceMappingURL=style.css.map */
