@@ -1,7 +1,10 @@
 @import 'partials/_typography';
-
 body {
     font-size: 2em;
     max-width: 600px;
     margin: auto;
+}
+
+p {
+    line-height: 2.4em;
 }
