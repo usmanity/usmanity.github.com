@@ -1,6 +1,13 @@
 @import 'partials/_typography';
+
 body {
     font-size: 2em;
     max-width: 600px;
     margin: auto;
+}
+
+@media (min-device-width: 320px) and (max-device-width: 812px)  {
+    body {
+        margin: 20px;
+    }
 }

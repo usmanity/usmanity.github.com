@@ -14,14 +14,16 @@ a {
 
 h1 {
   color: $dark;
-  height: 60px;
-  text-align: center;
-  line-height: 60px;
-  border: 4px solid;
-  width: 60px;
-  float: left;
-  margin-right: 20px;
-  margin-top: 12px;
+  &.homepage.title {
+    height: 60px;
+    text-align: center;
+    line-height: 60px;
+    border: 4px solid;
+    width: 60px;
+    float: left;
+    margin-right: 20px;
+    margin-top: 12px;
+  }
 }
 
 .intro {
