@@ -6,6 +6,15 @@ body {
     margin: auto;
 }
 
+footer {
+    text-align: center;
+    padding-top: 30px;
+    a {
+        font-size: 36px;
+
+    }
+}
+
 @media (min-device-width: 320px) and (max-device-width: 812px)  {
     body {
         margin: 20px;
