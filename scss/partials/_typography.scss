@@ -10,10 +10,7 @@ body {
   color: $black;
   font-size: 1.6rem;
   font-family: 'Inter UI', sans-serif;
-}
-
-p {
-  line-height: 1.9rem;
+  line-height: 1.4em;
 }
 
 @mixin text-align-center {
@@ -52,9 +49,4 @@ li {
   list-style: none;
   margin-left: 0;
   padding-left: 0;
-  &:before {
-    content: '»';
-    opacity: 0.5;
-    padding-right: 8px;
-  }
 }
