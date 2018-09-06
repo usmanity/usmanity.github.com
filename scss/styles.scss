@@ -2,15 +2,29 @@
 @import 'partials/_typography';
 @import 'partials/_grid';
 
+
 body {
-  background-color: $bg-color;
-  color: $text-color;
   overflow-x: hidden;
+  &.light {
+    background-color: $bg-color;
+    color: $text-color;
+    a {
+      color: $link-color;
+    }
+  }
+  &.dark {
+    background-color: $text-color;
+    color: $bg-color;
+    a {
+      color: $bg-color;
+    }
+    h1.homepage-title {
+      color: $bg-color;
+    }
+  }
 }
 
-a {
-  color: $link-color;
-}
+
 
 h1 {
   color: $dark;
