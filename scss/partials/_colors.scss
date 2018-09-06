@@ -17,6 +17,26 @@ $light--highline-color: $bluish;
 
 // dark colors
 $dark--bg-color: $night;
-$dark--text-color: $moonlight;
-$dark--link-color: $verdan;
+$dark--text-color: $verdan;
+$dark--link-color: $moonlight;
 $dark--highline-color: $verdan;
+
+
+body.light {
+    background-color: $light--bg-color;
+    color: $light--text-color;
+    a {
+      color: $light--link-color;
+    }
+}
+
+body.dark {
+    background-color: $dark--bg-color;
+    color: $dark--text-color;
+    a {
+      color: $dark--link-color;
+    }
+    h1.homepage.title {
+      color: $dark--text-color;
+    }
+}
