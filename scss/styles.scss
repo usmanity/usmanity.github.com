@@ -6,20 +6,20 @@
 body {
   overflow-x: hidden;
   &.light {
-    background-color: $bg-color;
-    color: $text-color;
+    background-color: $light--bg-color;
+    color: $light--text-color;
     a {
-      color: $link-color;
+      color: $light--link-color;
     }
   }
   &.dark {
-    background-color: $text-color;
-    color: $bg-color;
+    background-color: $dark--bg-color;
+    color: $dark--text-color;
     a {
-      color: $bg-color;
+      color: $dark--link-color;
     }
-    h1.homepage-title {
-      color: $bg-color;
+    h1.homepage.title {
+      color: $dark--text-color;
     }
   }
 }

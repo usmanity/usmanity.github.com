@@ -5,9 +5,18 @@ $dark: #444555;
 $verdan: #FEF7EF;
 $violet: #371B46;
 $bluish: #1D58B9;
+$night: #06122c;
+$moonlight: #88e0f5;
 
 
-$bg-color: white;
-$text-color: $violet;
-$link-color: $bluish;
-$highline-color: $bluish;
+// light colors
+$light--bg-color: white;
+$light--text-color: $violet;
+$light--link-color: $bluish;
+$light--highline-color: $bluish;
+
+// dark colors
+$dark--bg-color: $night;
+$dark--text-color: $moonlight;
+$dark--link-color: $verdan;
+$dark--highline-color: $verdan;
