@@ -1,0 +1,24 @@
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 100vh;
+}
+
+subprime {
+  font-family: Futura, Trebuchet MS, Arial, sans-serif;
+  font-style: oblique;
+  font-size: 36px;
+  outline: none;
+  background-color: red;
+  color: white;
+  padding: 5px 8px;
+}
+/*# sourceMappingURL=style.css.map */
