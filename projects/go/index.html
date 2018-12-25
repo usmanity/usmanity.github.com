@@ -41,19 +41,22 @@ curl -X POST \
         So, I went with using two JSON files to save long and short URL pairs.
         I am using <strong>two</strong> JSON files, one where the short URL is the key and one where the long URL is the key.
         <pre>
-    short-links.json
-    {
-        "about": "http://usmanity.com/projects/go"
-    }
+short-links.json
+{
+    "about": "http://usmanity.com/projects/go"
+}
         </pre>
         The above shows this page's entry in the JSON file for short links. 
         <br>
-        The lookup speeds for each file are <oblique>O(1)</oblique>. Since looking up any file in a JSON structure 
-        in JS will be the fastest if it's looked up using a key. 
+    </p>
+    <p>
+        The lookup speeds for each file are <oblique>O(1)</oblique>. Since looking up any file in a JSON structure
+        in JS will be the fastest if it's looked up using a key.
         See in this JSPerf example (<a href="https://jsperf.com/usmanity-array-vs-object-lookups">link</a>), this works
-        well if the lookup is just simply the key in an object and we only want the value from that key. 
+        well if the lookup is just simply the key in an object and we only want the value from that key.
         <br>
-        The size of the file will continue to increase so I will add a way to check the average lookup time for links over a certain period of time.
+        The size of the file will continue to increase so I will add a way to check the average lookup time for links over a
+        certain period of time.
     </p>
 </body>
 </html>
