@@ -25,4 +25,10 @@ oblique {
 pre {
   font-size: 12px;
 }
+
+.outta-here {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  display: inline-block;
+}
 /*# sourceMappingURL=project.css.map */
