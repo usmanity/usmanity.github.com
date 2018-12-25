@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="/projects/project.css">
+    <title>Go (URL Shortener)</title>
+</head>
+<body>
+    <h1>Go (URL Shortener)</h1>
+    <p>
+        Go is a tiny Node.js application I worked on and put together in about 4-5 hours. 
+        <br>
+        I usually take a lot longer working on projects so under 5 hours was very very quick for me.
+        <br>I decided to use <a href="#">go.mhmd.us</a> because I already am using <a href="#">mhmd.us</a>
+        to host my droplr links and content. 
+    </p>
+    <h2>Details</h2>
+    <p>
+        I decided to try the simplest way to create a key/value pair system to save the data necessary to run a URL shortener.
+        <br>
+        So, I went with using two JSON files to save long and short URL pairs.
+        I am using <strong>two</strong> JSON files, one where the short URL is the key and one where the long URL is the key.
+        <pre>
+    short-links.json
+    {
+        "about": "http://usmanity.com/projects/go"
+    }
+        </pre>
+        The above shows this page's entry in the JSON file for short links. 
+        <br>
+        The lookup speeds for each file are <oblique>O(1)</oblique>. Since looking up any file in a JSON structure 
+        in JS will be the fastest if it's looked up using a key. 
+        See in this JSPerf example (<a href="https://jsperf.com/usmanity-array-vs-object-lookups">link</a>), this works
+        well if the lookup is just simply the key in an object and we only want the value from that key. 
+        <br>
+        The size of the file will continue to increase so I will add a way to check the average lookup time for links over a certain period of time.
+    </p>
+</body>
+</html>
