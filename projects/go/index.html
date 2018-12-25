@@ -16,6 +16,24 @@
         <br>I decided to use <a href="#">go.mhmd.us</a> because I already am using <a href="#">mhmd.us</a>
         to host my droplr links and content. 
     </p>
+    <h2>Usage</h2>
+    <p>
+        I'd like to welcome you to try out this URL shortener with the caveat that it is only for demo purposes right now.
+        <br>
+        You can start using it by sending a curl request like below: 
+        <pre>
+curl -X POST \
+    http://go.mhmd.us/shorten \
+    -H 'Content-Type: application/json' \
+    -d '{
+    "url": "https://your-long-url.com",
+}'
+        </pre>
+        <oblique>You can also pass in an option <code>"custom"</code> key/value pair to get a custom path. </oblique>
+        <br>
+        If all goes well, you will get a <code>OK 200</code> with the JSON response including the short and long links.
+        <br>
+    </p>
     <h2>Details</h2>
     <p>
         I decided to try the simplest way to create a key/value pair system to save the data necessary to run a URL shortener.
