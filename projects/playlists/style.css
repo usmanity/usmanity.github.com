@@ -19,17 +19,27 @@ h1 {
 
 .playlists li {
   border-radius: 10px;
-  box-shadow: 0 0 4px rgba(123, 123, 123, 0.5);
+  -webkit-box-shadow: 0 0 4px rgba(123, 123, 123, 0.5);
+          box-shadow: 0 0 4px rgba(123, 123, 123, 0.5);
   background-color: #354457;
   color: white;
   margin: 20px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .playlists li .info {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   width: 90%;
 }
 
@@ -54,7 +64,9 @@ h1 {
   float: right;
   width: 80px;
   text-align: center;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   display: block;
   overflow: hidden;
 }
