@@ -1,5 +1,5 @@
 @import '_colors';
-@import url('https://rsms.me/inter/inter-ui.css');
+@import url('https://rsms.me/inter/inter.css');
 
 html {
   // a simple base font size so that everything is easier to size relatively using REM
@@ -9,7 +9,7 @@ body {
   background-color: white;
   color: $black;
   font-size: 1.6rem;
-  font-family: 'Inter UI', sans-serif;
+  font-family: 'Inter', sans-serif;
   line-height: 1.4em;
 }
 

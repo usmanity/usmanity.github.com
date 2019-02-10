@@ -30,13 +30,23 @@ body.light {
     }
 }
 
-body.dark {
-    background-color: $dark--bg-color;
+@mixin darkMode {
+  background-color: $dark--bg-color;
+  color: $dark--text-color;
+  a {
+    color: $dark--link-color;
+  }
+  h1.homepage.title {
     color: $dark--text-color;
-    a {
-      color: $dark--link-color;
-    }
-    h1.homepage.title {
-      color: $dark--text-color;
-    }
+  }
+}
+
+body.dark {
+  @include darkMode();
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    @include darkMode();
+  }
 }
