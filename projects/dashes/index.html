@@ -40,14 +40,23 @@
 			display: flex;
 			justify-content: space-between;
 		}
+		.intro {
+			font-size: 13px;
+			line-height: 16px;
+		}
 	</style>
 	<title>Dashes</title>
 </head>
 <body id="dashes">
 	<h1>Dashes</h1>
-	<p>
-		A dash and a hyphen are very similar in appearance but their widths can vary.
-		On a typical QWERTY keyboard, there's a dash available on the right of the 0 key.
+	<p class="intro">
+		Use this page to copy different types of dashes.
+		<br>
+		Clicking anywhere on the dash will copy it.
+		<br>
+		Holding Shift while clicking will copy the Unicode point.
+		<br>
+		Holding ALT while clicking will copy the HTML reference.
 		<br>
 		Dash font-size is 36px, dash name and discription are 16px.
 	</p>
@@ -56,13 +65,13 @@
 			<div class="dash">—</div>
 			<div class="name">Em dash</div>
 			<div class="description">
-				<span>
+				<span class="unicode">
 					<type>Unicode point</type>
 					<numeric>U+2014</numeric>
 				</span>
-				<span>
+				<span class="html-ref">
 					<type>HTML reference</type>
-					<numeric>&amp;mdash</numeric>
+					<numeric>&amp;mdash;</numeric>
 				</span>
 			</div>
 		</li>
@@ -70,13 +79,13 @@
 			<div class="dash">–</div>
 			<div class="name">En dash</div>
 			<div class="description">
-				<span>
-				<type>Unicode point</type>
-				<numeric>U+2013</numeric>
+				<span class="unicode">
+					<type>Unicode point</type>
+					<numeric>U+2013</numeric>
 				</span>
-				<span>
-				<type>HTML reference</type>
-				<numeric>&amp;ndash</numeric>
+				<span class="html-ref">
+					<type>HTML reference</type>
+					<numeric>&amp;ndash;</numeric>
 				</span>
 			</div>
 		</li>
@@ -84,11 +93,11 @@
 			<div class="dash">―</div>
 			<div class="name">Horizontal bar</div>
 			<div class="description">
-				<span>
+				<span class="unicode">
 					<type>Unicode point</type>
 					<numeric>U+2015</numeric>
 				</span>
-				<span>
+				<span class="html-ref">
 					<type>HTML reference</type>
 					<numeric>&amp;horbar;</numeric>
 				</span>
@@ -98,11 +107,11 @@
 			<div class="dash">-</div>
 			<div class="name">Hyphen-minus</div>
 			<div class="description">
-				<span>
+				<span class="unicode">
 					<type>Unicode point</type>
 					<numeric>U+002D</numeric>
 				</span>
-				<span>
+				<span class="html-ref">
 					<type>HTML reference</type>
 					<numeric>&amp;hyphen;</numeric>
 				</span>
@@ -112,11 +121,11 @@
 			<div class="dash">⁓</div>
 			<div class="name">Swung dash</div>
 			<div class="description">
-				<span>
+				<span class="unicode">
 					<type>Unicode point</type>
 					<numeric>U+2053</numeric>
 				</span>
-				<span>
+				<span class="html-ref">
 					<type>HTML reference</type>
 					<numeric>&amp;8275;</numeric>
 				</span>
@@ -126,22 +135,45 @@
 			<div class="dash">‒</div>
 			<div class="name">Figure dash</div>
 			<div class="description">
-				<span>
+				<span class="unicode">
 					<type>Unicode point</type>
 					<numeric>U+2012</numeric>
 				</span>
-				<span>
+				<span class="html-ref">
 					<type>HTML reference</type>
 					<numeric>&amp;8210;</numeric>
 				</span>
 			</div>
 		</li>
 		<!--
-		<li>
-			<div class="dash"></div>
-			<div class="name"></div>
-		</li>
+			<li>
+				<div class="dash"></div>
+				<div class="name"></div>
+			</li>
 		-->
 	</ul>
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.js"
+	integrity="sha256-fNXJFIlca05BIO2Y5zh1xrShK3ME+/lYZ0j+ChxX2DA=" crossorigin="anonymous"></script>
+	<script>
+		function copyToClipboard(element) {
+			var $temp = $("<input>");
+			$("body").append($temp);
+			$temp.val($(element).text()).select();
+			document.execCommand("copy");
+			$temp.remove();
+		}
+		$(document).ready(function() {
+
+			$('li').click(function(e) {
+				if (e.shiftKey) {
+					copyToClipboard($(this).find('.description .unicode numeric'));
+				} else if (e.altKey) {
+					copyToClipboard($(this).find('.description .html-ref numeric'));
+				} else {
+					copyToClipboard($(this).find('.dash'));
+				}
+			});
+		})
+	</script>
 </body>
 </html>
