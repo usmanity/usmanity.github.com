@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* Import into a project description page */
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
@@ -30,5 +31,20 @@ pre {
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
   display: inline-block;
+}
+
+#projects ul li {
+  line-height: 24px;
+}
+
+#projects ul li:before {
+  content: '⁙';
+  font-size: 12px;
+  line-height: 24px;
+  text-align: center;
+  top: -2px;
+  position: relative;
+  padding-right: 3px;
+  color: #786;
 }
 /*# sourceMappingURL=project.css.map */
