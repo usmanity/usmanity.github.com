@@ -10,7 +10,14 @@
 </head>
 <body>
     <div id="app">
-        <input v-model="text" type="text" placeholder="text goes here">
+        <h1>Get 3 different sizes of the same text</h1>
+        <subtitle>Great for emojis</subtitle>
+        <input
+            v-model="text"
+            type="text"
+            placeholder="Text goes here"
+            class="input-text"
+        >
         <div class="medium-text">
             {{ text }}
         </div>
