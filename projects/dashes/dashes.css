@@ -22,7 +22,7 @@ li {
 
 li:hover {
   cursor: pointer;
-  border-color: #999;
+  border-color: #00CEE9;
 }
 
 li:hover .looming {
