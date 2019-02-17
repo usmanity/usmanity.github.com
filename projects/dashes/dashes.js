@@ -23,14 +23,21 @@ $(document).ready(function() {
     $(window).keydown(function(event) {
         if (event.which == 16) {
             $('.shift-key').addClass('highlighted');
+            $('ul').addClass('has-key-down');
+            $('.unicode').addClass('looming');
         }
         if (event.which == 18) {
             $('.alt-key').addClass('highlighted');
+            $('ul').addClass('has-key-down');
+            $('.html-ref').addClass('looming');
         }
     });
     
     $(window).keyup(function() {
         $('.button-ui').removeClass('highlighted');
+        $('.unicode').removeClass('looming');
+        $('.html-ref').removeClass('looming');
+        $('ul').removeClass('has-key-down');
     });
 
     

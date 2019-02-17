@@ -2,6 +2,9 @@ ul {
     list-style: none;
     padding: 0;
     margin: 0;
+    &.has-key-down {
+        color: #876;
+    }
 }
 li {
     float: left;
@@ -15,6 +18,9 @@ li {
     &:hover {
         cursor: pointer;
         border-color: #999;
+        .looming {
+            color: black;
+        }
     }
 }
 .dash {
@@ -25,6 +31,9 @@ li {
 }
 .description {
     margin-top: 10px;
+    .unicode, .html-ref {
+        border-radius: 5px;
+    }
 }
 numeric {
     font-family: 'SF Mono', 'Roboto Mono', sans-serif;

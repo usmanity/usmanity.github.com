@@ -4,6 +4,10 @@ ul {
   margin: 0;
 }
 
+ul.has-key-down {
+  color: #876;
+}
+
 li {
   float: left;
   margin: 10px 20px 10px 0;
@@ -21,6 +25,10 @@ li:hover {
   border-color: #999;
 }
 
+li:hover .looming {
+  color: black;
+}
+
 .dash {
   font-size: 36px;
 }
@@ -31,6 +39,10 @@ li:hover {
 
 .description {
   margin-top: 10px;
+}
+
+.description .unicode, .description .html-ref {
+  border-radius: 5px;
 }
 
 numeric {
