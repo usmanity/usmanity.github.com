@@ -35,14 +35,17 @@ li {
         border-radius: 5px;
     }
 }
+
 numeric {
     font-family: 'SF Mono', 'Roboto Mono', sans-serif;
 }
+
 type {
     font-size: 12px;
     text-transform: uppercase;
     letter-spacing: 0.9px;
 }
+
 .description > span {
     display: flex;
     justify-content: space-between;
@@ -87,13 +90,23 @@ tooltip {
     }
 }
 
+
+footer {
+    width: 100%;
+    text-align: center;
+    display: block;
+    float: left;
+    padding: 40px 0;
+    font-size: 12px;
+}
+
 /** mobile styles **/
 @media screen and (max-width: 800px) {
     #dashes {
         width: 80%;
-        pointer-events: none;
     }
     li {
+        pointer-events: none;
         width: 86%;
     }
 }

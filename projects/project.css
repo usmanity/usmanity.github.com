@@ -28,6 +28,13 @@ pre {
   font-size: 12px;
 }
 
+footer {
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  display: block;
+}
+
 .outta-here {
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
