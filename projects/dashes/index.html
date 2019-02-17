@@ -8,6 +8,9 @@
 	<title>Dashes</title>
 </head>
 <body id="dashes">
+	<tooltip class="hidden">
+		&#x2713; Copied to clipboard!
+	</tooltip>
 	<h1>Dashes</h1>
 	<p class="intro">
 		Use this page to copy different types of dashes.
@@ -15,12 +18,12 @@
 	<p class="intro">
 		Click anywhere on the name to copy.
 		<br>
-		Hold <span class="button-ui">Shift &#x21E7;</span> when clicking to copy the Unicode point.
+		Hold <span class="button-ui shift-key">Shift &#x21E7;</span> when clicking to copy the Unicode point.
 		<br>
-		Hold <span class="button-ui">Alt &#x2325;</span> when clicking to copy the HTML reference.
+		Hold <span class="button-ui alt-key">Alt &#x2325;</span> when clicking to copy the HTML reference.
 	</p>
 	<p class="intro">
-		Dash font-size is 36px, dash name and discription are 16px.
+		Dash font-size is 36px, dash name is 16px.
 	</p>
 	<ul>
 		<li>
@@ -116,26 +119,6 @@
 	</ul>
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.js"
 	integrity="sha256-fNXJFIlca05BIO2Y5zh1xrShK3ME+/lYZ0j+ChxX2DA=" crossorigin="anonymous"></script>
-	<script>
-		function copyToClipboard(element) {
-			var $temp = $("<input>");
-			$("body").append($temp);
-			$temp.val($(element).text()).select();
-			document.execCommand("copy");
-			$temp.remove();
-		}
-		$(document).ready(function() {
-
-			$('li').click(function(e) {
-				if (e.shiftKey) {
-					copyToClipboard($(this).find('.description .unicode numeric'));
-				} else if (e.altKey) {
-					copyToClipboard($(this).find('.description .html-ref numeric'));
-				} else {
-					copyToClipboard($(this).find('.dash'));
-				}
-			});
-		})
-	</script>
+	<script src="dashes.js"></script>
 </body>
 </html>
