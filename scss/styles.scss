@@ -1,16 +1,14 @@
 @import 'partials/_reset';
 @import 'partials/_typography';
 @import 'partials/_grid';
+@import 'partials/colors';
 
 
 body {
   overflow-x: hidden;
 }
 
-
-
 h1 {
-  color: $dark;
   &.homepage.title {
     height: 60px;
     text-align: center;

@@ -1,28 +1,17 @@
 @charset "UTF-8";
-body.light {
+body {
   background-color: white;
   color: #371B46;
 }
 
-body.light a {
+body a {
   color: #1D58B9;
-}
-
-body.dark {
-  background-color: #06122c;
-  color: #FEF7EF;
-}
-
-body.dark a {
-  color: #bceaf4;
-}
-
-body.dark h1 {
-  color: #FEF7EF;
 }
 
 @media (prefers-color-scheme: dark) {
   body {
+    background-color: #06122c;
+    color: #371B46;
     background-color: #06122c;
     color: #FEF7EF;
   }
