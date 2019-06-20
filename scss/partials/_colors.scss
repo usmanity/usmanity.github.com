@@ -23,33 +23,21 @@ $dark--highline-color: $verdan;
 
 
 body {
-    background-color: $light--bg-color;
-    color: $light--text-color;
+    // background-color: $light--bg-color;
+    // color: $light--text-color;
     a {
-      color: $light--link-color;
+      // color: $light--link-color;
     }
 }
 
 @mixin darkMode {
-  background-color: $dark--bg-color;
-  color: $dark--text-color;
+  // background-color: $dark--bg-color;
+  // color: $dark--text-color;
   a {
-    color: $dark--link-color;
+    // color: $dark--link-color;
 
   }
   h1 {
-    color: $dark--text-color;
-  }
-}
-
-// body.dark {
-//   @include darkMode();
-// }
-
-@media (prefers-color-scheme: dark) {
-  body {
-    background-color: $dark--bg-color;
-    color: $light--text-color;
-    @include darkMode();
+    // color: $dark--text-color;
   }
 }
