@@ -6,7 +6,6 @@
 
 body {
   overflow-x: hidden;
-  scale: 1vh;
 }
 
 h1 {
@@ -41,11 +40,25 @@ h1 {
   margin: auto;
 }
 
-@media (min-device-width: 320px) and (max-device-width: 812px)  {
+@media (min-device-width: 320px) and (max-device-width: 812px) {
   body {
     margin: 20px;
   }
   h1 {
     margin-top: 16px;
+  }
+}
+
+@media (min-height: 900px) {
+  .container {
+    padding-top: 15vh;
+    transform: scale(1.5);
+  }
+}
+
+@media (min-height: 1200px) {
+  .container {
+    padding-top: 25vh;
+    transform: scale(2);
   }
 }
