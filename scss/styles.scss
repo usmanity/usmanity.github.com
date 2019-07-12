@@ -6,6 +6,7 @@
 
 body {
   overflow-x: hidden;
+  scale: 1vh;
 }
 
 h1 {
@@ -27,9 +28,10 @@ h1 {
 
 .projects {
   ul {
+    padding-left: 0;
     li {
-      margin-top: 10px;
-      list-style: '⁜';
+      margin: 10px 0;
+      list-style: none;
     }
   }
 }
