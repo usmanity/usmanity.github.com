@@ -72,10 +72,10 @@ function startTimer() {
   console.log("Starting timer");
   watchActive = true;
   timerInterval = setInterval(function() {
-    totalTime += 10;
+    totalTime += 25;
     console.log(totalTime);
     updateTimeDisplay();
-  }, 10);
+  }, 25);
   startSound.play();
 }
 
