@@ -6,7 +6,7 @@ $verdan: #FEF7EF;
 $violet: #371B46;
 $bluish: #1D58B9;
 $night: #06122c;
-$moonlight: #88e0f5;
+$moonlight: #bceaf4;
 
 
 // light colors
@@ -22,7 +22,7 @@ $dark--link-color: $moonlight;
 $dark--highline-color: $verdan;
 
 
-body.light {
+body {
     background-color: $light--bg-color;
     color: $light--text-color;
     a {
@@ -35,18 +35,21 @@ body.light {
   color: $dark--text-color;
   a {
     color: $dark--link-color;
+
   }
-  h1.homepage.title {
+  h1 {
     color: $dark--text-color;
   }
 }
 
-body.dark {
-  @include darkMode();
-}
+// body.dark {
+//   @include darkMode();
+// }
 
 @media (prefers-color-scheme: dark) {
   body {
+    background-color: $dark--bg-color;
+    color: $light--text-color;
     @include darkMode();
   }
 }

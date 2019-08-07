@@ -1,4 +1,28 @@
 @charset "UTF-8";
+body {
+  background-color: white;
+  color: #371B46;
+}
+
+body a {
+  color: #1D58B9;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #06122c;
+    color: #371B46;
+    background-color: #06122c;
+    color: #FEF7EF;
+  }
+  body a {
+    color: #bceaf4;
+  }
+  body h1 {
+    color: #FEF7EF;
+  }
+}
+
 /* Import into a project description page */
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
@@ -9,10 +33,6 @@ body {
   margin: 50px auto;
   color: #420;
   line-height: 1.48em;
-}
-
-h1, h2 {
-  color: #123;
 }
 
 a {

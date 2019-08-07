@@ -5,7 +5,7 @@ This website and its contents are mostly created by me, Muhammad Usman.
 
 Over time, I have learned a tremendous amount of things from people listed below.
 
-You can find out more about me at https://usmanity.com or my blog at http://blog.usmanity.com
+You can find out more about me at https://usmanity.com or my blog at https://blog.usmanity.com/about
 
 Contact me on Twitter: https://twitter.com/usmanity
 
@@ -15,7 +15,8 @@ To list a few, as a thank you to each:
 
 People:
   - Kristen Ojeda, @kristenojeda
-  - Ethan Sutin
+  - Ethan S.
   - Noah S., noah.org
-  - Mohnish T., @mohnish
   - Lokesh Dhakar, www.lokeshdhakar.com
+  - Mohnish T., @mohnish
+  - Travis B.
