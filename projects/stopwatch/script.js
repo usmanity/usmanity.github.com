@@ -83,6 +83,7 @@ function cancelTimer() {
   console.log("Cancelling timer");
   if (!watchActive) {
     resetTimer();
+    return;
   }
   watchActive = false;
   clearInterval(timerInterval);
