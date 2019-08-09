@@ -9,3 +9,5 @@
 })(document, window, '//stats.usman.xyz/tracker.js', 'fathom');
 fathom('set', 'siteId', 'EMRHO');
 fathom('trackPageview');
+
+console.log("Notes about analytics: all tracking is done by Fathom which means no user info is tracked past 'did someone show up on my site?'")
