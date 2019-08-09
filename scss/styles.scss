@@ -1,8 +1,7 @@
-@import 'partials/_reset';
-@import 'partials/_typography';
-@import 'partials/_grid';
-@import 'partials/colors';
-
+@import "partials/_reset";
+@import "partials/_typography";
+@import "partials/_grid";
+@import "partials/colors";
 
 body {
   overflow-x: hidden;
@@ -52,13 +51,13 @@ h1 {
 @media (min-height: 900px) {
   .container {
     padding-top: 15vh;
-    transform: scale(1.5);
+    transform: scale(1.2);
   }
 }
 
 @media (min-height: 1200px) {
   .container {
-    padding-top: 25vh;
-    transform: scale(2);
+    padding-top: 20vh;
+    transform: scale(1.4);
   }
 }

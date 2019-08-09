@@ -149,15 +149,11 @@ h1.homepage.title {
 
 .projects ul {
   padding-left: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
 }
 
 .projects ul li {
-  margin-top: 10px;
-  list-style: circle;
-  border: 1px solid red;
+  margin: 10px 0;
+  list-style: none;
 }
 
 .container {
@@ -171,6 +167,22 @@ h1.homepage.title {
   }
   h1 {
     margin-top: 16px;
+  }
+}
+
+@media (min-height: 900px) {
+  .container {
+    padding-top: 15vh;
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+}
+
+@media (min-height: 1200px) {
+  .container {
+    padding-top: 20vh;
+    -webkit-transform: scale(1.4);
+            transform: scale(1.4);
   }
 }
 /*# sourceMappingURL=styles.css.map */
