@@ -10,38 +10,49 @@ $moonlight: #bceaf4;
 
 
 // light colors
-$light--bg-color: white;
-$light--text-color: $violet;
-$light--link-color: $bluish;
-$light--highline-color: $bluish;
+$light-mode--bg-color: white;
+$light-mode--text-color: $violet;
+$light-mode--link-color: $bluish;
+$light-mode--highline-color: $bluish;
 
 // dark colors
-$dark--bg-color: $night;
-$dark--text-color: $verdan;
-$dark--link-color: $moonlight;
-$dark--highline-color: $verdan;
+$dark-mode--bg-color: $night;
+$dark-mode--text-color: $verdan;
+$dark-mode--link-color: $moonlight;
+$dark-mode--highline-color: $verdan;
 
 
 body {
-    background-color: $light--bg-color;
-    color: $light--text-color;
+    background-color: $light-mode--bg-color;
+    color: $light-mode--text-color;
     a {
-      color: $light--link-color;
+      color: $light-mode--link-color;
     }
+}
+.alert-highlight {
+    background-color:#4f4f4f;
+    color:#c6c6c6;
 }
 
 @mixin darkMode {
-  background-color: $dark--bg-color;
-  color: $dark--text-color;
+  background-color: $dark-mode--bg-color;
+  color: $dark-mode--text-color;
   a {
-    color: $dark--link-color;
+    color: $dark-mode--link-color;
 
   }
   h1 {
-    color: $dark--text-color;
+    color: $dark-mode--text-color;
   }
   p {
-    color: $dark--text-color;
+    color: $dark-mode--text-color;
+  }
+  .alert-highlight {
+    background-color:#4f4f4f;
+    color:#c6c6c6;
+  }
+  pre {
+    color: $dark-mode--text-color;
   }
 }
 
@@ -51,8 +62,6 @@ body {
 
 @media (prefers-color-scheme: dark) {
   body {
-    background-color: $dark--bg-color;
-    color: $light--text-color;
     @include darkMode();
   }
 }

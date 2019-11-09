@@ -51,6 +51,8 @@ h1 {
 @media (min-height: 900px) {
   .container {
     padding-top: 15vh;
+  }
+  body {
     transform: scale(1.4);
   }
 }
@@ -58,6 +60,8 @@ h1 {
 @media (min-height: 1200px) {
   .container {
     padding-top: 20vh;
+  }
+  body {
     transform: scale(1.6);
   }
 }
