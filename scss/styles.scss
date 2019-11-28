@@ -48,7 +48,7 @@ h1 {
   }
 }
 
-@media (min-height: 900px) {
+@media (min-height: 900px) and (min-width: 1200px) {
   .container {
     padding-top: 15vh;
   }
@@ -57,7 +57,7 @@ h1 {
   }
 }
 
-@media (min-height: 1200px) {
+@media (min-height: 1200px) and (min-width: 1400px) {
   .container {
     padding-top: 20vh;
   }
