@@ -9,7 +9,7 @@
   "author": "Muhammad Usman <muhammad@usmanity.com>",
   "license": "MIT",
   "devDependencies": {
-    "grunt": "^1.2.1",
+    "grunt": "1.4.0",
     "grunt-contrib-watch": "^1.1.0",
     "grunt-sass": "^2.1.0"
   },
